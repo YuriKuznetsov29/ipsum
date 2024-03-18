@@ -1,0 +1,24 @@
+@import "./fonts.scss";
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./btn.scss";
+@import "./header.scss";
+@import "./banner.scss";
+@import "./footer.scss";
+@import "./form.scss";
+@import "./navigation.scss";
+
+body {
+    background-color: #fff;
+    font-family: var(--font-family-main);
+    font-weight: 400;
+    font-size: var(--font-size-m);
+}
+
+.section {
+    width: 100%;
+}
+
+.container {
+    width: 1140px;
+}

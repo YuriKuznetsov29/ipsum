@@ -1,0 +1,30 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.link {
+    padding: 0 16px;
+    height: 44px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-s);
+    color: var(--colors-ebony);
+    &:hover {
+        cursor: pointer;
+        color: var(--btn-primary-color);
+    }
+}
+
+.link_left {
+    padding: 0;
+}

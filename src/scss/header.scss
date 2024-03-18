@@ -1,0 +1,12 @@
+.header {
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}

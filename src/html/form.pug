@@ -1,0 +1,14 @@
+include /html/button
+
+mixin form(placeholder, text, split)
+    if (split)
+        form.form.form-split(action="")
+            .form__input__wrapper.form__input__wrapper-split 
+                input(class= "form__input", placeholder= placeholder)
+            +button(text, "form__btn-split")
+    else
+        form.form(action="")
+            .form__input__wrapper 
+                img(class= '.form__icon', src='@img/glass.svg')
+                input(class= "form__input", placeholder= placeholder)
+            +button(text, "form__btn")

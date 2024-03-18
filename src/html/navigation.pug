@@ -1,0 +1,7 @@
+include /html/link
+
+mixin navigation(column, start)
+    nav(class=`nav ${column} ${start}`)
+        +link('/',)
+        +link('/', 'Company')
+        +link('/', 'Blog')
