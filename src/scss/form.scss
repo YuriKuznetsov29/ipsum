@@ -5,6 +5,7 @@
     border: 1px solid #ebebef;
     display: flex;
     justify-content: space-between;
+    background: #fff;
 }
 
 .form-split {
@@ -29,9 +30,18 @@
 .form__input {
     width: 100%;
     height: 44px;
-    padding: 14px 12px;
+    padding: 14px 12px 14px 50px;
     border: none;
     outline: none;
+    background: url(../img/glass.svg) left 8px top 10px no-repeat;
+    &-split {
+        width: 319px;
+        height: 48px;
+        padding-left: 12px;
+        background: none;
+        border: 1px solid #ebebef;
+    }
+
 }
 
 .form__btn {

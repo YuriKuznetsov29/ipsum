@@ -1,0 +1,35 @@
+.smallCard {
+    width: 518px;
+    height: 90px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 14px 0px;
+    padding: 16px;
+    background: #f9f9fb;
+}
+
+.smallCard__logo {
+    margin-right: 16px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.smallCard__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.smallCard__content__title {
+    color: var(--colors-ebony);
+    font-weight: 500;
+    
+}
+.smallCard__content__text {
+    color: var(--colors-shuttle-gray);
+    font-size: var(--font-size-s);
+}

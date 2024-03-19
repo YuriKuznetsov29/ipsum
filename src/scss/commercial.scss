@@ -1,0 +1,38 @@
+.commercial {
+    padding: 64px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.commercial__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.commercial__images {
+    width: 518px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.commercial__info {
+    width: 518px;
+}
+
+.commercial__info__title {
+    margin-bottom: 30px;
+    color: var(--colors-ebony);
+    font-family: Archivo;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.commercial__info__text {
+    margin-bottom: 30px;
+    text-align: left;
+    color: var(--colors-bright-gra);
+}

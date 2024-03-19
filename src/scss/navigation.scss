@@ -23,6 +23,9 @@
         cursor: pointer;
         color: var(--btn-primary-color);
     }
+    &-active {
+        color: var(--colors-royal-blue)
+    }
 }
 
 .link_left {

@@ -2,6 +2,6 @@ include /html/link
 
 mixin navigation(column, start)
     nav(class=`nav ${column} ${start}`)
-        +link('/',)
+        +link('/', 'Home', 'link-active')
         +link('/', 'Company')
         +link('/', 'Blog')

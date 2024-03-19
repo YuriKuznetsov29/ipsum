@@ -1,4 +1,79 @@
 .banner {
     display: flex;
     justify-content: center;
+    padding: 64px 0;
 }
+
+.banner__content__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner__title {
+    width: 298px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px 8px 8px;
+    background: #f9f9fb;
+}
+
+.banner__title__logo {
+    width: 47px;
+    height: 24px;
+    display: flex;
+    padding: 4px 8px 4px 8px;
+    margin: 0px 12px;
+    background: #fff;
+    color: var(--colors-royal-blue);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner__title__text {
+    color: var(--colors-ebony);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.banner__content__wrapper {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 135px;
+}
+
+.banner__content__text-left {
+    color: #030407;
+    font-family: var(--font-family-second);
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.banner__content__text-right {
+    color: var(--colors-bright-gray);
+    text-align: left;
+}
+
+.banner__image {
+    margin-bottom: 80px;
+}
+
+.banner__form {
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+}
+
+.banner__brands {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+

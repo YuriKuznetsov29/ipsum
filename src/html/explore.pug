@@ -1,0 +1,9 @@
+include /html/form
+
+section.explore
+    .container.explore__container
+        .explore__icon__wrapper
+            img(src="@img/glass.png", alt="glass")
+        p.explore__title Explore a job now!
+        p.explore__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rhoncus pharetra cursus. Suspendisse sodales porta leo, ac placerat ex pretium quis.        
+        +form("Search...", "Search", false, 'explore__form')
