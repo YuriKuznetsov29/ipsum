@@ -1,20 +1,19 @@
 .card {
     padding: 30px;
-    width: 360x;
+    width: 360px;
     border: 1px solid var(--colors-athens-gray);
     background-color: #fff;
 }
 
 .card__header {
     margin-bottom: 25px;
-    display: flex;  
+    display: flex;
     justify-content: flex-start;
 }
 
 .card__header__date {
     color: rgb(96, 100, 118);
     font-size: var(--font-size-s);
-    
 }
 .card__header__logo {
     width: 56px;

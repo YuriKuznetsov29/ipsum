@@ -1,7 +1,7 @@
 include /html/tag
 
 mixin card(header,text, tags = [], city, salary)
-    .card.swiper-slide
+    .card.swiper-slide(style= "width: 360px")
         .card__header
             .card__header__logo
                 img(src=`@img/${header.logo}`, alt="logo")

@@ -1,10 +1,8 @@
-import * as flsFunctions from "./modules/functions.js";
-import Swiper from "swiper/bundle";
-import "swiper/css/bundle";
-import "swiper/css/autoplay";
+import * as flsFunctions from "./modules/functions.js"
+import Swiper from "swiper/bundle"
 
 const swiper = new Swiper(".companies__slider", {
-    slidesPerView: 4,
+    slidesPerView: "auto",
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -15,16 +13,16 @@ const swiper = new Swiper(".companies__slider", {
         el: ".swiper-pagination",
         clickable: true,
     },
-});
+})
 
-const element = document.querySelector(".companies__slider");
+const element = document.querySelector(".companies__slider")
 
 element.addEventListener("mouseover", () => {
-    swiper.autoplay.stop();
-});
+    swiper.autoplay.stop()
+})
 
 element.addEventListener("mouseout", () => {
-    swiper.autoplay.start();
-});
+    swiper.autoplay.start()
+})
 
-flsFunctions.isWebp();
+flsFunctions.isWebp()
