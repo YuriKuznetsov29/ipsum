@@ -1,0 +1,35 @@
+.button__wrapper {
+    display: flex;
+}
+
+.sliderBtnPrev, .sliderBtnNext {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid rgb(235, 235, 239);
+    cursor: pointer;
+    
+}
+
+.sliderBtnPrev {
+    margin-right: 22px;
+    background-image: url(../img/arrowLeft.svg);
+    &:disabled {
+        background-image: url(../img/arrowLeftDis.svg);
+    }
+}
+
+.sliderBtnNext {
+    background-image: url(../img/arrowRight.svg);
+    &:disabled {
+        background-image: url(../img/arrowRightDis.svg);
+    }
+}
+
+.arrowLeft {
+    fill: #fff;
+}

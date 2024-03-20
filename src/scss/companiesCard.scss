@@ -1,0 +1,51 @@
+.companiesCard {
+    padding: 40px;
+    width: 390px;
+    height: 310px;
+    border: 1px solid var(--colors-athens-gray);
+    background-color: #fff;
+}
+
+.companiesCard__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.companiesCard__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.companiesCard__header__logo {
+    width: 56px;
+    height: 56px;
+    margin-right: 14px;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(235, 235, 239);
+}
+
+.companiesCard__header__title {
+    color: rgb(3, 4, 7);
+    font-family: Archivo;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.companiesCard__header__wrapper {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.companiesCard__content__text {
+    color: #3e404c;
+}

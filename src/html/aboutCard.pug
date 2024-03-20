@@ -1,0 +1,6 @@
+mixin aboutCard(image, text, profession)
+    .aboutCard.swiper-slide 
+        .aboutCard__text__wrapper
+            p.aboutCard__text= text
+            p.aboutCard__profession= profession
+        img(class= 'aboutCard__image', src=`@img/${image}`, alt="person")

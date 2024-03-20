@@ -1,0 +1,22 @@
+.aboutCard {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutCard__text__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+
+.aboutCard__text__wrapper {
+    flex: 1;
+}
+
+.aboutCard__image {
+    max-width: 50%;
+    object-fit: cover;
+    flex: 1;
+}

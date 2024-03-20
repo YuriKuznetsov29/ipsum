@@ -1,0 +1,29 @@
+include /html/newsCard
+include /html/sliderBtn
+
+-
+    const newsData = [
+        {image: '2003-p-500.jpg', text: 'Lorem ipsum dolor sit amet.', tag: {text: 'Resources', color: 'blue'}, date: 'October 24, 2022'},
+        {image: '2003-p-500.jpg', text: 'Lorem ipsum dolor sit amet.', tag: {text: 'Resources', color: 'blue'}, date: 'October 24, 2022'},
+        {image: '2003-p-500.jpg', text: 'Lorem ipsum dolor sit amet.', tag: {text: 'Resources', color: 'blue'}, date: 'October 24, 2022'},
+        {image: '2003-p-500.jpg', text: 'Lorem ipsum dolor sit amet.', tag: {text: 'Resources', color: 'blue'}, date: 'October 24, 2022'},
+        {image: '2003-p-500.jpg', text: 'Lorem ipsum dolor sit amet.', tag: {text: 'Resources', color: 'blue'}, date: 'October 24, 2022'},
+        {image: '2003-p-500.jpg', text: 'Lorem ipsum dolor sit amet.', tag: {text: 'Resources', color: 'blue'}, date: 'October 24, 2022'},
+    ]
+
+section.news
+    .container.news__container
+        .news__header
+            .news__text__wrapper
+                p.news__title Work with exciting news
+                p.news__text Discover more than 1,600 open positions
+            .news__btn__wrapper 
+                +sliderBtn('news__slider__button-prev', 'news__slider__button-next')
+        .news__slider
+            .swiper-wrapper
+                each card in newsData
+                    +newsCard(card.image, card.text, card.tag, card.date)
+            
+            
+            
+        

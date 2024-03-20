@@ -1,0 +1,14 @@
+include /html/tag
+
+mixin newsCard(image, text, tag, date)
+    .newsCard.swiper-slide(style= "width: 390px")
+        img(class= 'newsCard__image', src= `@img/${image}`, alt= 'image')
+        .newsCard__container
+            +tag(tag.text, tag.color)
+            p.newsCard__text= text
+            .newsCard__date__wrapper
+                img(src='@img/dot.svg', alt='dot')
+                p.newsCard__date= date
+            button.newsCard__btn
+                |Read More
+                img(class= 'newsCard__btn__img', src='@img/smallArrow.svg', alt='arrow')

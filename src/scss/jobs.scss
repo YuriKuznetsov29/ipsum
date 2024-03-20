@@ -1,25 +1,28 @@
-.companies {
-    width: 100%;
-    padding: 64px 0;
+.jobs {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    padding: 64px 0;
+    background: #f9f9fb;
 }
 
-.companies__header {
+.jobs__card__container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.jobs__header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 60px;
 }
 
-.companies__text__wrapper {
+.jobs__text__wrapper {
     max-width: 50%;
 }
 
-.companies__title {
+.jobs__title {
     color: rgb(3, 4, 7);
     font-family: Archivo;
     font-size: 40px;
@@ -28,15 +31,7 @@
     margin-bottom: 16px;
 }
 
-.companies__text {
+.jobs__text {
     color: rgb(62, 64, 76);
     text-align: left;
 }
-
-.companies__container {
-    .companies__slider {
-        width: 100%;
-        height: 310px;
-    }
-}
-

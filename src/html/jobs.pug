@@ -1,0 +1,25 @@
+include /html/jobsCard
+include /html/button
+
+-
+    const cardData = [
+        {header: {logo: 'facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, text: 'Lead Technical Architect', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Melbourne', salary: '210k-240k'},
+        {header: {logo: 'facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, text: 'Lead Technical Architect', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Melbourne', salary: '210k-240k'},
+        {header: {logo: 'facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, text: 'Lead Technical Architect', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Melbourne', salary: '210k-240k'},
+        {header: {logo: 'facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, text: 'Lead Technical Architect', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Melbourne', salary: '210k-240k'},
+        {header: {logo: 'facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, text: 'Lead Technical Architect', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Melbourne', salary: '210k-240k'},
+        {header: {logo: 'facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, text: 'Lead Technical Architect', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Melbourne', salary: '210k-240k'},
+    ]
+
+section.jobs 
+    .container.container__jobs
+        .jobs__header
+            .jobs__text__wrapper
+                p.jobs__title Explore the latest job openings
+                p.jobs__text 
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus,
+                    | pharetra leo et, efficitur tortor. Fusce vel convallis magna.
+            +button('See All Jobs')
+        .jobs__card__container
+            each card in cardData
+                +jobsCard(card.header, card.text, card.tags, card.city, card.salary)

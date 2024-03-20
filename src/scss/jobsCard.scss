@@ -1,21 +1,21 @@
-.card {
+.jobsCard {
     padding: 30px;
     width: 360px;
     border: 1px solid var(--colors-athens-gray);
     background-color: #fff;
 }
 
-.card__header {
+.jobsCard__header {
     margin-bottom: 25px;
     display: flex;
     justify-content: flex-start;
 }
 
-.card__header__date {
+.jobsCard__header__date {
     color: rgb(96, 100, 118);
     font-size: var(--font-size-s);
 }
-.card__header__logo {
+.jobsCard__header__logo {
     width: 56px;
     height: 56px;
     margin: 0px 14px;
@@ -26,14 +26,14 @@
     border: 1px solid rgb(235, 235, 239);
 }
 
-.card__header__wrapper {
+.jobsCard__header__wrapper {
     padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.card__content__text {
+.jobsCard__content__text {
     margin-bottom: 25px;
     color: var(--colors-ebony);
     font-family: var(--font-family-second);
@@ -41,21 +41,29 @@
     font-weight: 700;
 }
 
-.card__tags__wrapper {
+.jobsCard__tags__wrapper {
     margin-bottom: 25px;
     display: flex;
     justify-content: flex-start;
 }
 
-.card__footer {
+.jobsCard__footer {
     display: flex;
     justify-content: flex-start;
 }
 
-.card__city {
-    margin-right: 30px;
+.jobsCard__city, .jobsCard__salary {
     color: rgb(96, 100, 118);
     font-size: 14px;
     font-weight: 500;
-    background: url(../img/location.svg) left -8px top 0px no-repeat;
+}
+
+.jobsCard__footer__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.jobsCard__city {
+    margin-right: 30px;
 }

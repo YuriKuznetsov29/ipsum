@@ -1,21 +1,29 @@
-include /html/card
+include /html/companiesCard
+include /html/sliderBtn
+
+-
+    const companiesData = [
+        {header: {logo: 'facebook.svg', title: 'Facebook'}, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.', tag: {text: '6000 Employers', color: 'green'}},
+        {header: {logo: 'facebook.svg', title: 'Facebook'}, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.', tag: {text: '6000 Employers', color: 'green'}},
+        {header: {logo: 'facebook.svg', title: 'Facebook'}, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.', tag: {text: '6000 Employers', color: 'green'}},
+        {header: {logo: 'facebook.svg', title: 'Facebook'}, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.', tag: {text: '6000 Employers', color: 'green'}},
+        {header: {logo: 'facebook.svg', title: 'Facebook'}, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.', tag: {text: '6000 Employers', color: 'green'}},
+        {header: {logo: 'facebook.svg', title: 'Facebook'}, text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.', tag: {text: '6000 Employers', color: 'green'}},
+    ]
 
 section.companies
     .container.companies__container
-    .companies__slider
-        .swiper-wrapper
-            +card({logo: '@img/facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, 'Lead Technical Architect', [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], 'Melbourne', '210k-240k')
-            +card({logo: '@img/facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, 'Lead Technical Architect', [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], 'Melbourne', '210k-240k')
-            +card({logo: '@img/facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, 'Lead Technical Architect', [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], 'Melbourne', '210k-240k')
-            +card({logo: '@img/facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, 'Lead Technical Architect', [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], 'Melbourne', '210k-240k')
-            +card({logo: '@img/facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, 'Lead Technical Architect', [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], 'Melbourne', '210k-240k')
-            +card({logo: '@img/facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, 'Lead Technical Architect', [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], 'Melbourne', '210k-240k')
-            +card({logo: '@img/facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, 'Lead Technical Architect', [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], 'Melbourne', '210k-240k')
-            +card({logo: '@img/facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, 'Lead Technical Architect', [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], 'Melbourne', '210k-240k')
-            +card({logo: '@img/facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, 'Lead Technical Architect', [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], 'Melbourne', '210k-240k')
-            +card({logo: '@img/facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, 'Lead Technical Architect', [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], 'Melbourne', '210k-240k')
-            +card({logo: '@img/facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, 'Lead Technical Architect', [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], 'Melbourne', '210k-240k')
-            +card({logo: '@img/facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, 'Lead Technical Architect', [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], 'Melbourne', '210k-240k')
+        .companies__header
+            .companies__text__wrapper
+                p.companies__title Work with exciting companies
+                p.companies__text Discover more than 1,600 open positions
+            .companies__btn__wrapper 
+                +sliderBtn('companies__slider__button-prev', 'companies__slider__button-next')
+        .companies__slider
+            .swiper-wrapper
+                each card in companiesData
+                    +companiesCard(card.header, card.text, card.tag)
+            
             
             
         

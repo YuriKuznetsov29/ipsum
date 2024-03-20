@@ -1,4 +1,4 @@
-.companies {
+.news {
     width: 100%;
     padding: 64px 0;
     display: flex;
@@ -8,18 +8,18 @@
     overflow: hidden;
 }
 
-.companies__header {
+.news__header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 60px;
 }
 
-.companies__text__wrapper {
+.news__text__wrapper {
     max-width: 50%;
 }
 
-.companies__title {
+.news__title {
     color: rgb(3, 4, 7);
     font-family: Archivo;
     font-size: 40px;
@@ -28,15 +28,15 @@
     margin-bottom: 16px;
 }
 
-.companies__text {
+.news__text {
     color: rgb(62, 64, 76);
     text-align: left;
 }
 
-.companies__container {
-    .companies__slider {
+.news__container {
+    .news__slider {
         width: 100%;
-        height: 310px;
+        height: 510px;
     }
 }
 

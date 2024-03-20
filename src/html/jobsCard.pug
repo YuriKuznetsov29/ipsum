@@ -1,0 +1,23 @@
+include /html/tag
+
+mixin jobsCard(header,text, tags = [], city, salary)
+    .jobsCard.swiper-slide(style= "width: 360px")
+        .jobsCard__header
+            .jobsCard__header__logo
+                img(src=`@img/${header.logo}`, alt="logo")
+            .jobsCard__header__wrapper
+                p.jobsCard__header__title= header.title
+                p.jobsCard__header__date= header.date
+        .jobsCard__content
+            p.jobsCard__content__text= text
+            if(tags.length)
+            .jobsCard__tags__wrapper
+                each tag in tags 
+                    +tag(tag.text, tag.color)
+        .jobsCard__footer
+            .jobsCard__footer__wrapper
+                img(src="@img//location.svg", alt="")
+                p.jobsCard__city= city
+            .jobsCard__footer__wrapper
+                img(src="@img//location.svg", alt="")
+                p.jobsCard__salary= salary

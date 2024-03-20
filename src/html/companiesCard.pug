@@ -1,0 +1,11 @@
+include /html/tag
+
+mixin companiesCard(header, text, tag)
+    .companiesCard.swiper-slide(style= "width: 390px")
+        .companiesCard__container
+            .companiesCard__header
+                .companiesCard__header__logo
+                    img(src=`@img/${header.logo}`, alt="logo")
+                p.companiesCard__header__title= header.title
+            p.companiesCard__content__text= text
+            +tag(tag.text, tag.color)
