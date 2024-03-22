@@ -1,0 +1,61 @@
+.btn {
+    height: 44px;
+    padding: 10px 20px;
+    white-space: nowrap;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary {
+    background-color: var(--btn-primary-color);
+    color: #fff;
+    font-size: var(--font-size-s);
+    font-weight: 500;
+    border: none;
+    outline: none;
+    &:hover {
+        background: rgb(36, 38, 45);
+    }
+    &:focus {
+        outline: 1px solid rgb(70, 64, 222);
+        background: rgb(36, 38, 45);
+    }
+    &:disabled {
+        background: rgb(178, 179, 189);
+    }
+}
+
+.secondary {
+    background: rgb(249, 249, 251);
+    color: #000;
+    font-size: var(--font-size-s);
+    font-weight: 400;
+    border: none;
+    outline: none;
+    &:hover {
+        background: rgb(68, 63, 222);
+        color: #fff;
+        svg {
+            fill: #fff;
+        }
+    }
+    &:focus {
+        outline: 1px solid rgb(70, 64, 222);
+        box-sizing: border-box;
+        outline: 1px solid rgb(235, 235, 239);
+        background: rgb(68, 63, 222);
+        color: #fff;
+        svg {
+            fill: #fff;
+        }
+    }
+    &:disabled {
+        background: rgb(249, 249, 251);
+        color: #fff;
+        svg {
+            fill: #fff;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-mixin sliderBtn(prev, next)
-    .button__wrapper
+mixin sliderBtn(prev, next, style= '')
+    div(class= `button__wrapper ${style}`)
         button(class= `sliderBtnPrev ${prev}`, type= "button")
         button(class= `sliderBtnNext ${next}`, type= "button")

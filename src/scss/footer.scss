@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     border-top: 1px solid var(--colors-athens-gray);
-
 }
 
 .footer__container {
@@ -40,4 +39,29 @@
     width: 169px;
     height: 40px;
     margin-bottom: 40px;
+}
+
+.footer__navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.footer__navigation__link {
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    .footer__grid {
+        flex-direction: column;
+    }
+
+    .footer__form {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .footer {
+        padding: 32px 0;
+    }
 }

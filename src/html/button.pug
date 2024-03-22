@@ -1,2 +1,3 @@
-mixin button(text, style, type= "button")
+mixin button(text, style= 'primary', type= "button")
     button(class= `btn ${style}`, type= type)= text
+        block

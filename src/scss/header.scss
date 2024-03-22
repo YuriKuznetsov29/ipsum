@@ -4,10 +4,129 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.header__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    display: flex;
+    justify-content: center;
+    z-index: 500;
+    background: #fff;
     border-bottom: 1px solid var(--colors-athens-gray);
 }
 
 .header__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header__login__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__login__text {
+    color: var(--colors-bright-gray);
+    font-size: var(--font-size-s);
+    font-weight: 500;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.header__mobile__menu {
+    cursor: pointer;
+    display: none;
+}
+
+.header__mobile {
+    padding: 16px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: fixed;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.header__mobile__disable {
+    animation: close;
+    animation-duration: 1s;
+}
+
+.header__mobile__active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    animation: open;
+    animation-duration: 1s;
+}
+
+.header__mobile__navigation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__nav__close {
+    margin: 0 16px 16px 0;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+        transform: rotateZ(45deg);
+    }
+}
+
+@keyframes close {
+    from {
+        transform: translateY(100vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes open {
+    from {
+        transform: translateY(-100vh);
+    }
+
+    to {
+        transform: translateY(100vh / 2);
+    }
+}
+
+.header__link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    &:hover {
+        background: rgb(68, 63, 222);
+        color: #fff;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__desc__navigation {
+        display: none;
+    }
+
+    .header__mobile__menu {
+        display: block;
+    }
+
+    .header__login__wrapper {
+        display: none;
+    }
 }

@@ -3,16 +3,17 @@ include /html/aboutCard
 -
     const aboutData = [
         {image: 'man.png', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”', profession: 'David Sinclair - Senior Frontend Developer'},
+        {image: 'man3.jpeg', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”', profession: 'David Sinclair - Senior Frontend Developer'},
         {image: 'man.png', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”', profession: 'David Sinclair - Senior Frontend Developer'},
-        {image: 'man.png', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”', profession: 'David Sinclair - Senior Frontend Developer'},
-        {image: 'man.png', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”', profession: 'David Sinclair - Senior Frontend Developer'},
+        {image: 'man3.jpeg', text: '“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”', profession: 'David Sinclair - Senior Frontend Developer'},
     ]
 
 section.about
-    .container.about__container
-        h1.aboutHeader See what users say about our job platform
+    .about__container
+        p.about__mobile__text TESTIMONIAL
+        h3.about__header See what users say about our job platform
+        +sliderBtn('about__slider__button-prev', 'about__slider__button-next', 'about__slider__button__block')
         .about__slider
             .swiper-wrapper
                 each card in aboutData
                     +aboutCard(card.image, card.text, card.profession)
-        +sliderBtn('about__slider__button-prev', 'about__slider__button-next')

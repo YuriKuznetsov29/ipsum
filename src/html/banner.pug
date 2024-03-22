@@ -1,7 +1,7 @@
 include /html/form
+include /html/icon
 
-
-.banner
+section(class= 'banner', data-section= 'home')
     .container.banner__container
         .banner__content__container
             .banner__title
@@ -10,12 +10,13 @@ include /html/form
             .banner__content__wrapper
                 p.banner__content__text-left Find the most exciting jobs in tech
                 p.banner__content__text-right Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et. Sign in or sign up to get started!
-            +form("Email address", "Search", false, 'banner__form')
+            +form("Search...", "Search", false, 'banner__form')
         img(class='banner__image', src='@img/banner.webp')
         .banner__brands
-            img(src="@img/brand.svg", alt="")
-            img(src="@img/brand.svg", alt="")
-            img(src="@img/brand.svg", alt="")
-            img(src="@img/brand.svg", alt="")
-            img(src="@img/brand.svg", alt="")
-            img(src="@img/brand.svg", alt="")
+            include /img/openTable.svg
+            include /img/hubspotLogo.svg
+            include /img/amazonLogo.svg
+            include /img/shopifyLogo.svg
+            include /img/slackLogo.svg
+            include /img/bropboxLogo.svg
+            

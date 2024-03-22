@@ -105,7 +105,7 @@ export const fontsStyle = () => {
                         }
                         fs.appendFile(
                             fontsFile,
-                            `@font-face {\n\tfont-family: "${fontName}";\n\tfont-display: swap;\n\tsrc: url("../fonts/${fontFileName}.woff2") format("woff2"), url("../fonts/${fontFileName}.woff") format("woff");\n\tfont-weight: ${fontWeight};\n\t}\r\n`,
+                            `@font-face {\n\tfont-family: "${fontName}";\n\tfont-display: swap;\n\tsrc: url("../files/${fontFileName}.woff2") format("woff2"), url("../files/${fontFileName}.woff") format("woff");\n\tfont-weight: ${fontWeight};\n\t}\r\n`,
                             cb
                         )
                         newFileOnly = fontFileName

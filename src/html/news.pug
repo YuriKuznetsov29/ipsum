@@ -3,19 +3,16 @@ include /html/sliderBtn
 
 -
     const newsData = [
-        {image: '2003-p-500.jpg', text: 'Lorem ipsum dolor sit amet.', tag: {text: 'Resources', color: 'blue'}, date: 'October 24, 2022'},
-        {image: '2003-p-500.jpg', text: 'Lorem ipsum dolor sit amet.', tag: {text: 'Resources', color: 'blue'}, date: 'October 24, 2022'},
-        {image: '2003-p-500.jpg', text: 'Lorem ipsum dolor sit amet.', tag: {text: 'Resources', color: 'blue'}, date: 'October 24, 2022'},
-        {image: '2003-p-500.jpg', text: 'Lorem ipsum dolor sit amet.', tag: {text: 'Resources', color: 'blue'}, date: 'October 24, 2022'},
-        {image: '2003-p-500.jpg', text: 'Lorem ipsum dolor sit amet.', tag: {text: 'Resources', color: 'blue'}, date: 'October 24, 2022'},
-        {image: '2003-p-500.jpg', text: 'Lorem ipsum dolor sit amet.', tag: {text: 'Resources', color: 'blue'}, date: 'October 24, 2022'},
+        {image: 'Image-p-500.jpg', text: 'Finding employees in the gig economy', tag: {text: 'Resources', color: 'blue'}, date: 'October 24, 2022'},
+        {image: '2003-p-500.jpg', text: 'How to make a great first impression everytime', tag: {text: 'Education', color: 'blue'}, date: 'October 24, 2022'},
+        {image: 'Blog2002-p-500.jpg', text: 'Find out the best paying careers in 2022', tag: {text: 'Trends', color: 'blue'}, date: 'October 24, 2022'},
+        {image: 'Blog2520p.jpeg', text: 'Ten things to nail your next job Interview', tag: {text: 'Careers', color: 'blue'}, date: 'March 24, 2021'},
     ]
-
 section.news
     .container.news__container
         .news__header
             .news__text__wrapper
-                p.news__title Work with exciting news
+                p.news__title Get the latest news about jobs!
                 p.news__text Discover more than 1,600 open positions
             .news__btn__wrapper 
                 +sliderBtn('news__slider__button-prev', 'news__slider__button-next')

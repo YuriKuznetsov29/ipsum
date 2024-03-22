@@ -1,4 +1,4 @@
-mixin link(href, text= "Home", style)
-    a(class= `link ${style}`, href= href)= text
+mixin link(text= "Home", style, data)
+    a(class= `link ${style}`, data-nav= data)= text
         
     

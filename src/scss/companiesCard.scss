@@ -1,6 +1,7 @@
 .companiesCard {
     padding: 40px;
-    width: 390px;
+    max-width: 390px;
+    width: 100%;
     height: 310px;
     border: 1px solid var(--colors-athens-gray);
     background-color: #fff;

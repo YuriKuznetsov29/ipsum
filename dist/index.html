@@ -1,444 +1,559 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="css/style.min.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPSUM</title>
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="header"> 
-      <div class="container header__container"><img src="img/logo.svg"/>
-            <nav class="nav undefined undefined"><a class="link link-active" href="/">Home</a><a class="link undefined" href="/">Company</a><a class="link undefined" href="/">Blog</a>
-            </nav>
-            <button class="btn undefined" type="button">Log in</button>
+      <div class="header__wrapper">
+        <div class="container header__container"><img src="img/logo.svg">
+              <nav class="nav header__desc__navigation"><a class="link link__home " data-nav="home">Home</a><a class="link link__company " data-nav="company">Company</a><a class="link link__blog " data-nav="blog">Blog</a>
+              </nav>
+          <div class="header__login__wrapper"><a class="header__login__text">Post a Job</a>
+                <button class="btn primary" type="button">Log in
+                </button>
+          </div><svg class="header__mobile__menu" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>
+
+          <div class="header__mobile"><svg class="header__nav__close" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+                <nav class="nav header__mobile__navigation"><a class="link link__home header__link" data-nav="home">Home</a><a class="link link__company header__link" data-nav="company">Company</a><a class="link link__blog header__link" data-nav="blog">Blog</a><a class="link header__link">Post a Job</a><a class="link header__link">Log in</a>
+                </nav>
+          </div>
+        </div>
       </div>
     </header>
-    <div class="banner">
-      <div class="container banner__container">
-        <div class="banner__content__container">
-          <div class="banner__title">
-            <p class="banner__title__logo">new</p>
-            <p class="banner__title__text">Stay connected to get upcoming jobs</p>
-          </div>
-          <div class="banner__content__wrapper">
-            <p class="banner__content__text-left">Find the most exciting jobs in tech</p>
-            <p class="banner__content__text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et. Sign in or sign up to get started!</p>
-          </div>
-              <form class="form banner__form" action="">
-                <input class="form__input" placeholder="Email address"/>
-                    <button class="btn form__btn" type="button">Search</button>
-              </form>
-        </div><img class="banner__image" src="img/banner.webp"/>
-        <div class="banner__brands"><img src="img/brand.svg" alt=""/><img src="img/brand.svg" alt=""/><img src="img/brand.svg" alt=""/><img src="img/brand.svg" alt=""/><img src="img/brand.svg" alt=""/><img src="img/brand.svg" alt=""/></div>
-      </div>
-    </div>
-    <section class="jobs"> 
-      <div class="container container__jobs">
-        <div class="jobs__header">
-          <div class="jobs__text__wrapper">
-            <p class="jobs__title">Explore the latest job openings</p>
-            <p class="jobs__text">
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus,
-              pharetra leo et, efficitur tortor. Fusce vel convallis magna.
-            </p>
-          </div>
-              <button class="btn undefined" type="button">See All Jobs</button>
-        </div>
-        <div class="jobs__card__container">
-              <div class="jobsCard swiper-slide" style="width: 360px">
-                <div class="jobsCard__header">
-                  <div class="jobsCard__header__logo"><img src="img/facebook.svg" alt="logo"/></div>
-                  <div class="jobsCard__header__wrapper">
-                    <p class="jobsCard__header__title">Facebook</p>
-                    <p class="jobsCard__header__date">October 25, 2022</p>
-                  </div>
-                </div>
-                <div class="jobsCard__content">
-                  <p class="jobsCard__content__text">Lead Technical Architect</p>
-                  <div class="jobsCard__tags__wrapper">
-                        <div class="tag tag__blue">Technology</div>
-                        <div class="tag tag__orange">Full Time</div>
-                  </div>
-                </div>
-                <div class="jobsCard__footer">
-                  <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt=""/>
-                    <p class="jobsCard__city">Melbourne</p>
-                  </div>
-                  <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt=""/>
-                    <p class="jobsCard__salary">210k-240k</p>
-                  </div>
-                </div>
-              </div>
-              <div class="jobsCard swiper-slide" style="width: 360px">
-                <div class="jobsCard__header">
-                  <div class="jobsCard__header__logo"><img src="img/facebook.svg" alt="logo"/></div>
-                  <div class="jobsCard__header__wrapper">
-                    <p class="jobsCard__header__title">Facebook</p>
-                    <p class="jobsCard__header__date">October 25, 2022</p>
-                  </div>
-                </div>
-                <div class="jobsCard__content">
-                  <p class="jobsCard__content__text">Lead Technical Architect</p>
-                  <div class="jobsCard__tags__wrapper">
-                        <div class="tag tag__blue">Technology</div>
-                        <div class="tag tag__orange">Full Time</div>
-                  </div>
-                </div>
-                <div class="jobsCard__footer">
-                  <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt=""/>
-                    <p class="jobsCard__city">Melbourne</p>
-                  </div>
-                  <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt=""/>
-                    <p class="jobsCard__salary">210k-240k</p>
-                  </div>
-                </div>
-              </div>
-              <div class="jobsCard swiper-slide" style="width: 360px">
-                <div class="jobsCard__header">
-                  <div class="jobsCard__header__logo"><img src="img/facebook.svg" alt="logo"/></div>
-                  <div class="jobsCard__header__wrapper">
-                    <p class="jobsCard__header__title">Facebook</p>
-                    <p class="jobsCard__header__date">October 25, 2022</p>
-                  </div>
-                </div>
-                <div class="jobsCard__content">
-                  <p class="jobsCard__content__text">Lead Technical Architect</p>
-                  <div class="jobsCard__tags__wrapper">
-                        <div class="tag tag__blue">Technology</div>
-                        <div class="tag tag__orange">Full Time</div>
-                  </div>
-                </div>
-                <div class="jobsCard__footer">
-                  <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt=""/>
-                    <p class="jobsCard__city">Melbourne</p>
-                  </div>
-                  <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt=""/>
-                    <p class="jobsCard__salary">210k-240k</p>
-                  </div>
-                </div>
-              </div>
-              <div class="jobsCard swiper-slide" style="width: 360px">
-                <div class="jobsCard__header">
-                  <div class="jobsCard__header__logo"><img src="img/facebook.svg" alt="logo"/></div>
-                  <div class="jobsCard__header__wrapper">
-                    <p class="jobsCard__header__title">Facebook</p>
-                    <p class="jobsCard__header__date">October 25, 2022</p>
-                  </div>
-                </div>
-                <div class="jobsCard__content">
-                  <p class="jobsCard__content__text">Lead Technical Architect</p>
-                  <div class="jobsCard__tags__wrapper">
-                        <div class="tag tag__blue">Technology</div>
-                        <div class="tag tag__orange">Full Time</div>
-                  </div>
-                </div>
-                <div class="jobsCard__footer">
-                  <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt=""/>
-                    <p class="jobsCard__city">Melbourne</p>
-                  </div>
-                  <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt=""/>
-                    <p class="jobsCard__salary">210k-240k</p>
-                  </div>
-                </div>
-              </div>
-              <div class="jobsCard swiper-slide" style="width: 360px">
-                <div class="jobsCard__header">
-                  <div class="jobsCard__header__logo"><img src="img/facebook.svg" alt="logo"/></div>
-                  <div class="jobsCard__header__wrapper">
-                    <p class="jobsCard__header__title">Facebook</p>
-                    <p class="jobsCard__header__date">October 25, 2022</p>
-                  </div>
-                </div>
-                <div class="jobsCard__content">
-                  <p class="jobsCard__content__text">Lead Technical Architect</p>
-                  <div class="jobsCard__tags__wrapper">
-                        <div class="tag tag__blue">Technology</div>
-                        <div class="tag tag__orange">Full Time</div>
-                  </div>
-                </div>
-                <div class="jobsCard__footer">
-                  <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt=""/>
-                    <p class="jobsCard__city">Melbourne</p>
-                  </div>
-                  <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt=""/>
-                    <p class="jobsCard__salary">210k-240k</p>
-                  </div>
-                </div>
-              </div>
-              <div class="jobsCard swiper-slide" style="width: 360px">
-                <div class="jobsCard__header">
-                  <div class="jobsCard__header__logo"><img src="img/facebook.svg" alt="logo"/></div>
-                  <div class="jobsCard__header__wrapper">
-                    <p class="jobsCard__header__title">Facebook</p>
-                    <p class="jobsCard__header__date">October 25, 2022</p>
-                  </div>
-                </div>
-                <div class="jobsCard__content">
-                  <p class="jobsCard__content__text">Lead Technical Architect</p>
-                  <div class="jobsCard__tags__wrapper">
-                        <div class="tag tag__blue">Technology</div>
-                        <div class="tag tag__orange">Full Time</div>
-                  </div>
-                </div>
-                <div class="jobsCard__footer">
-                  <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt=""/>
-                    <p class="jobsCard__city">Melbourne</p>
-                  </div>
-                  <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt=""/>
-                    <p class="jobsCard__salary">210k-240k</p>
-                  </div>
-                </div>
-              </div>
-        </div>
-      </div>
-    </section>
-    <section class="companies">
-      <div class="container companies__container">
-        <div class="companies__header">
-          <div class="companies__text__wrapper">
-            <p class="companies__title">Work with exciting companies</p>
-            <p class="companies__text">Discover more than 1,600 open positions</p>
-          </div>
-          <div class="companies__btn__wrapper"> 
-                <div class="button__wrapper">
-                  <button class="sliderBtnPrev companies__slider__button-prev" type="button"></button>
-                  <button class="sliderBtnNext companies__slider__button-next" type="button"></button>
-                </div>
-          </div>
-        </div>
-        <div class="companies__slider">
-          <div class="swiper-wrapper">
-                <div class="companiesCard swiper-slide" style="width: 390px">
-                  <div class="companiesCard__container">
-                    <div class="companiesCard__header">
-                      <div class="companiesCard__header__logo"><img src="img/facebook.svg" alt="logo"/></div>
-                      <p class="companiesCard__header__title">Facebook</p>
-                    </div>
-                    <p class="companiesCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
-                        <div class="tag tag__green">6000 Employers</div>
-                  </div>
-                </div>
-                <div class="companiesCard swiper-slide" style="width: 390px">
-                  <div class="companiesCard__container">
-                    <div class="companiesCard__header">
-                      <div class="companiesCard__header__logo"><img src="img/facebook.svg" alt="logo"/></div>
-                      <p class="companiesCard__header__title">Facebook</p>
-                    </div>
-                    <p class="companiesCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
-                        <div class="tag tag__green">6000 Employers</div>
-                  </div>
-                </div>
-                <div class="companiesCard swiper-slide" style="width: 390px">
-                  <div class="companiesCard__container">
-                    <div class="companiesCard__header">
-                      <div class="companiesCard__header__logo"><img src="img/facebook.svg" alt="logo"/></div>
-                      <p class="companiesCard__header__title">Facebook</p>
-                    </div>
-                    <p class="companiesCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
-                        <div class="tag tag__green">6000 Employers</div>
-                  </div>
-                </div>
-                <div class="companiesCard swiper-slide" style="width: 390px">
-                  <div class="companiesCard__container">
-                    <div class="companiesCard__header">
-                      <div class="companiesCard__header__logo"><img src="img/facebook.svg" alt="logo"/></div>
-                      <p class="companiesCard__header__title">Facebook</p>
-                    </div>
-                    <p class="companiesCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
-                        <div class="tag tag__green">6000 Employers</div>
-                  </div>
-                </div>
-                <div class="companiesCard swiper-slide" style="width: 390px">
-                  <div class="companiesCard__container">
-                    <div class="companiesCard__header">
-                      <div class="companiesCard__header__logo"><img src="img/facebook.svg" alt="logo"/></div>
-                      <p class="companiesCard__header__title">Facebook</p>
-                    </div>
-                    <p class="companiesCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
-                        <div class="tag tag__green">6000 Employers</div>
-                  </div>
-                </div>
-                <div class="companiesCard swiper-slide" style="width: 390px">
-                  <div class="companiesCard__container">
-                    <div class="companiesCard__header">
-                      <div class="companiesCard__header__logo"><img src="img/facebook.svg" alt="logo"/></div>
-                      <p class="companiesCard__header__title">Facebook</p>
-                    </div>
-                    <p class="companiesCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
-                        <div class="tag tag__green">6000 Employers</div>
-                  </div>
-                </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="commercial">
-      <div class="container commercial__container">
-        <div class="commercial__images"><img src="img/man.png" alt=""/><img src="img/note.png" alt=""/></div>
-        <div class="commercial__info">
-          <p class="commercial__info__title">Build a custom membership site with locked content.</p>
-          <p class="commercial__info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna, sit amet pulvinar diam. Sed laoreet feugiat consequat.</p>
-              <div class="smallCard">
-                <div class="smallCard__logo"><img src="img/two-users.png" alt="logo"/></div>
-                <div class="smallCard__content">
-                  <div class="smallCard__content__title">Add a feature point here</div>
-                  <div class="smallCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                </div>
-              </div>
-              <div class="smallCard">
-                <div class="smallCard__logo"><img src="img/two-users.png" alt="logo"/></div>
-                <div class="smallCard__content">
-                  <div class="smallCard__content__title">Add a feature point here</div>
-                  <div class="smallCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                </div>
-              </div>
-              <div class="smallCard">
-                <div class="smallCard__logo"><img src="img/two-users.png" alt="logo"/></div>
-                <div class="smallCard__content">
-                  <div class="smallCard__content__title">Add a feature point here</div>
-                  <div class="smallCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                </div>
-              </div>
-        </div>
-      </div>
-    </section>
-    <section class="about">
-      <div class="container about__container">
-        <h1 class="aboutHeader">See what users say about our job platform</h1>
-        <div class="about__slider">
-          <div class="swiper-wrapper">
-                <div class="aboutCard swiper-slide"> 
-                  <div class="aboutCard__text__wrapper">
-                    <p class="aboutCard__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”</p>
-                    <p class="aboutCard__profession">David Sinclair - Senior Frontend Developer</p>
-                  </div><img class="aboutCard__image" src="img/man.png" alt="person"/>
-                </div>
-                <div class="aboutCard swiper-slide"> 
-                  <div class="aboutCard__text__wrapper">
-                    <p class="aboutCard__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”</p>
-                    <p class="aboutCard__profession">David Sinclair - Senior Frontend Developer</p>
-                  </div><img class="aboutCard__image" src="img/man.png" alt="person"/>
-                </div>
-                <div class="aboutCard swiper-slide"> 
-                  <div class="aboutCard__text__wrapper">
-                    <p class="aboutCard__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”</p>
-                    <p class="aboutCard__profession">David Sinclair - Senior Frontend Developer</p>
-                  </div><img class="aboutCard__image" src="img/man.png" alt="person"/>
-                </div>
-                <div class="aboutCard swiper-slide"> 
-                  <div class="aboutCard__text__wrapper">
-                    <p class="aboutCard__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”</p>
-                    <p class="aboutCard__profession">David Sinclair - Senior Frontend Developer</p>
-                  </div><img class="aboutCard__image" src="img/man.png" alt="person"/>
-                </div>
-          </div>
-        </div>
-            <div class="button__wrapper">
-              <button class="sliderBtnPrev about__slider__button-prev" type="button"></button>
-              <button class="sliderBtnNext about__slider__button-next" type="button"></button>
+    <main> 
+      <section class="banner" data-section="home">
+        <div class="container banner__container">
+          <div class="banner__content__container">
+            <div class="banner__title">
+              <p class="banner__title__logo">new</p>
+              <p class="banner__title__text">Stay connected to get upcoming jobs</p>
             </div>
-      </div>
-    </section>
-    <section class="news">
-      <div class="container news__container">
-        <div class="news__header">
-          <div class="news__text__wrapper">
-            <p class="news__title">Work with exciting news</p>
-            <p class="news__text">Discover more than 1,600 open positions</p>
-          </div>
-          <div class="news__btn__wrapper"> 
-                <div class="button__wrapper">
-                  <button class="sliderBtnPrev news__slider__button-prev" type="button"></button>
-                  <button class="sliderBtnNext news__slider__button-next" type="button"></button>
-                </div>
+            <div class="banner__content__wrapper">
+              <p class="banner__content__text-left">Find the most exciting jobs in tech</p>
+              <p class="banner__content__text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et. Sign in or sign up to get started!</p>
+            </div>
+                  <form class="form banner__form" action="">
+                    <input class="form__input" placeholder="Search..." type="search">
+                          <button class="btn primary form__btn" type="button">Search
+                          </button>
+                  </form>
+          </div><img class="banner__image" src="img/banner.webp">
+          <div class="banner__brands">
+            <svg class="banner__brand__img" width="143.000000" height="32.000000" viewBox="0 0 143 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip4_864">
+			<rect id="63337525695d8b8f23b4428c_Grey%20Logo%20Large%20(2).svg" width="143.000000" height="32.000000" transform="translate(-0.690308 -0.601562)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip4_864)">
+		<mask id="mask4_867" mask-type="alpha" maskUnits="userSpaceOnUse" x="-0.690308" y="-0.601562" width="142.666992" height="32.000000">
+			<path id="Vector" d="M-0.7 -0.61L141.97 -0.61L141.97 31.39L-0.7 31.39L-0.7 -0.61Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+		</mask>
+		<g mask="url(#mask4_867)">
+			<path id="Vector" d="M-0.7 15.39C-0.7 14.87 -0.59 14.36 -0.39 13.88C-0.2 13.4 0.1 12.96 0.46 12.6C0.83 12.23 1.27 11.94 1.75 11.74C2.23 11.54 2.74 11.44 3.26 11.44C3.78 11.44 4.3 11.54 4.78 11.74C5.26 11.94 5.69 12.23 6.06 12.6C6.43 12.96 6.72 13.4 6.92 13.88C7.12 14.36 7.22 14.87 7.22 15.39C7.22 16.44 6.8 17.45 6.06 18.19C5.32 18.93 4.31 19.35 3.26 19.35C2.21 19.35 1.21 18.93 0.46 18.19C-0.28 17.45 -0.7 16.44 -0.7 15.39ZM27.09 19.35C26.04 19.35 25.03 18.94 24.29 18.19C23.55 17.45 23.13 16.45 23.13 15.4C23.13 14.35 23.55 13.34 24.29 12.6C25.03 11.85 26.04 11.44 27.09 11.44C28.14 11.44 29.15 11.85 29.89 12.6C30.63 13.34 31.05 14.34 31.05 15.39C31.05 16.44 30.63 17.45 29.89 18.19C29.15 18.93 28.14 19.35 27.09 19.35L27.09 19.35ZM27.09 -0.44C25.01 -0.44 22.95 -0.03 21.03 0.77C19.11 1.56 17.37 2.73 15.9 4.2C14.43 5.67 13.27 7.41 12.47 9.34C11.68 11.26 11.27 13.32 11.27 15.39C11.27 17.47 11.68 19.53 12.47 21.45C13.27 23.37 14.43 25.12 15.9 26.59C17.37 28.06 19.11 29.22 21.03 30.02C22.95 30.82 25.01 31.23 27.09 31.23C29.17 31.23 31.23 30.82 33.15 30.02C35.07 29.22 36.81 28.06 38.28 26.59C39.75 25.12 40.91 23.37 41.71 21.45C42.5 19.53 42.91 17.47 42.91 15.39C42.91 13.32 42.5 11.26 41.71 9.34C40.91 7.42 39.75 5.67 38.28 4.2C36.81 2.73 35.07 1.56 33.15 0.77C31.23 -0.03 29.17 -0.44 27.09 -0.44ZM140.17 14.17C140.42 14.17 140.57 14.06 140.57 13.85C140.57 13.67 140.47 13.55 140.19 13.55L139.93 13.55L139.93 14.17L140.17 14.17L140.17 14.17ZM139.55 13.23L140.25 13.23C140.64 13.23 140.98 13.39 140.98 13.83C140.98 14.06 140.84 14.27 140.64 14.34L141.06 15.11L140.64 15.11L140.32 14.46L139.94 14.46L139.94 15.11L139.56 15.11L139.56 13.23L139.55 13.23ZM141.6 14.2C141.6 13.33 141 12.7 140.22 12.7C139.44 12.7 138.85 13.33 138.85 14.2C138.85 15.08 139.44 15.68 140.22 15.68C141 15.68 141.6 15.08 141.6 14.2ZM138.48 14.2C138.48 13.11 139.27 12.37 140.22 12.37C141.18 12.37 141.97 13.11 141.97 14.2C141.97 15.28 141.18 16.02 140.22 16.02C139.27 16.02 138.48 15.28 138.48 14.2ZM126.87 21.6C127.11 21.6 127.31 21.4 127.31 21.17L127.31 19.58C127.31 19.35 127.11 19.15 126.87 19.15L126.81 19.15C126.61 19.15 126.42 18.96 126.42 18.77L126.42 9.35C126.42 9.13 126.2 8.92 125.99 8.92L124.41 8.92C124.19 8.92 123.98 9.13 123.98 9.35L123.98 19.78L123.98 20.05C124.01 20.46 124.18 20.84 124.47 21.12C124.75 21.41 125.13 21.58 125.54 21.6L126.87 21.6L126.87 21.6ZM57.26 11.4C59.41 11.4 61.22 13.23 61.22 15.39C61.22 16.44 60.81 17.45 60.07 18.19C59.32 18.94 58.32 19.35 57.27 19.35C56.22 19.35 55.21 18.94 54.47 18.19C53.73 17.45 53.31 16.44 53.31 15.39C53.31 13.19 55.08 11.41 57.26 11.41L57.26 11.4ZM57.26 8.89C55.54 8.9 53.9 9.59 52.69 10.81C51.48 12.03 50.8 13.68 50.8 15.39C50.8 19.02 53.64 21.86 57.26 21.86C58.11 21.87 58.96 21.71 59.75 21.39C60.54 21.07 61.26 20.59 61.86 19.99C62.46 19.39 62.94 18.67 63.26 17.88C63.59 17.09 63.75 16.25 63.74 15.39C63.74 11.81 60.83 8.89 57.26 8.89L57.26 8.89ZM108.79 19.03C108.67 19.36 107.97 19.98 107.17 19.98C106.33 19.98 105.86 19.48 105.86 18.72C105.86 17.91 106.43 17.42 107.46 17.42C108.18 17.42 108.79 17.7 108.79 17.7L108.79 19.03L108.79 19.03ZM107.74 12.36C106.27 12.36 104.84 12.73 104.65 12.81C104.45 12.87 104.28 13.03 104.36 13.36L104.55 14.38C104.59 14.65 104.77 14.86 105.06 14.77C105.59 14.61 106.78 14.43 107.6 14.43C108.56 14.43 108.89 14.98 108.85 16.13C108.85 16.13 108.03 15.88 107.11 15.88C104.83 15.88 103.52 17.11 103.52 18.71C103.52 20.65 104.77 21.8 106.56 21.8C107.97 21.8 108.87 21.18 109.4 20.67L109.4 21.15C109.4 21.39 109.59 21.59 109.82 21.59L110.7 21.59C110.94 21.59 111.13 21.39 111.13 21.16L111.13 16.29C111.13 13.83 110.55 12.37 107.73 12.37L107.74 12.36ZM91.34 12.36C89.61 12.36 88.77 13.29 88.44 13.66L88.44 12.99C88.44 12.76 88.24 12.56 88 12.56L86.98 12.56C86.87 12.56 86.76 12.61 86.68 12.69C86.6 12.77 86.55 12.88 86.55 12.99L86.55 21.16C86.55 21.39 86.77 21.59 86.98 21.59L88.43 21.59C88.86 21.59 88.99 21.49 88.99 21.16L88.99 16C89.12 15.58 89.38 15.22 89.73 14.96C90.09 14.71 90.51 14.58 90.95 14.59C92.04 14.59 92.51 15.31 92.51 16.49L92.51 21.16C92.51 21.39 92.7 21.59 92.94 21.59L94.52 21.59C94.74 21.59 94.95 21.39 94.95 21.16L94.95 16.49C94.95 14.3 94.21 12.36 91.34 12.36ZM69.84 19.57C69.18 19.58 68.53 19.41 67.96 19.07L67.96 15.84C68.13 15.46 68.41 15.13 68.76 14.91C69.12 14.68 69.54 14.57 69.95 14.59C71.36 14.59 72.08 15.82 72.08 17.09C72.08 18.36 71.32 19.57 69.84 19.57ZM70.29 12.36C68.43 12.36 67.4 13.63 67.34 13.71L67.34 12.99C67.34 12.76 67.15 12.56 66.91 12.56L65.95 12.56C65.72 12.56 65.52 12.76 65.52 12.99L65.52 24.83C65.52 25.04 65.72 25.26 65.95 25.26L67.53 25.26C67.75 25.26 67.96 25.04 67.96 24.83L67.96 21.43C68.66 21.67 69.39 21.8 70.13 21.8C72.83 21.8 74.6 19.73 74.6 17.09C74.6 14.35 72.75 12.36 70.29 12.36L70.29 12.36ZM134.69 15.94C134.65 15.06 133.95 14.37 132.95 14.37C131.86 14.37 131.16 15.04 131.03 15.94L134.69 15.94ZM133 12.36C135.35 12.36 137.14 14.1 137.14 16.54C137.14 16.68 137.13 16.99 137.11 17.13C137.09 17.36 136.87 17.54 136.67 17.54L130.89 17.54C130.92 18.65 131.84 19.63 133.14 19.63C134.04 19.63 134.67 19.3 135.08 18.96C135.29 18.79 135.53 18.77 135.66 18.96L136.42 19.98C136.58 20.16 136.6 20.37 136.38 20.57C135.6 21.23 134.49 21.8 133.03 21.8C130.33 21.8 128.46 19.65 128.46 17.07C128.46 14.53 130.33 12.36 133 12.36ZM117.72 19.57C117.3 19.59 116.89 19.48 116.53 19.26C116.18 19.03 115.9 18.71 115.73 18.32L115.73 15.1C115.73 15.1 116.47 14.59 117.61 14.59C119.09 14.59 119.85 15.8 119.85 17.07C119.85 18.34 119.13 19.57 117.72 19.57ZM117.94 12.36C117.04 12.36 116.14 12.58 115.73 12.75L115.73 9.32C115.73 9.1 115.53 8.88 115.3 8.88L113.72 8.88C113.51 8.88 113.29 9.1 113.29 9.32L113.29 21.16C113.29 21.39 113.51 21.59 113.72 21.59L114.4 21.59C114.42 21.59 114.43 21.59 114.44 21.58L114.63 21.58C114.86 21.58 115.06 21.39 115.06 21.15L115.06 20.49L115.07 20.45C115.07 20.45 116.1 21.8 118.07 21.8C120.54 21.8 122.31 19.65 122.31 17.07C122.31 14.44 120.61 12.36 117.94 12.36L117.94 12.36ZM104.12 8.88L94.94 8.88C94.72 8.88 94.57 9.06 94.57 9.25L94.57 10.86C94.57 11.05 94.72 11.23 94.94 11.23L98.25 11.23L98.25 21.21C98.25 21.41 98.43 21.58 98.62 21.58L100.44 21.58C100.64 21.58 100.81 21.41 100.81 21.21L100.81 11.23L104.13 11.23C104.34 11.23 104.49 11.05 104.49 10.86L104.49 9.25C104.49 9.06 104.34 8.88 104.13 8.88L104.12 8.88ZM82.25 15.94C82.21 15.06 81.51 14.37 80.52 14.37C79.42 14.37 78.72 15.04 78.6 15.94L82.25 15.94ZM80.57 12.36C82.92 12.36 84.71 14.1 84.71 16.54C84.71 16.68 84.69 16.99 84.67 17.13C84.65 17.36 84.44 17.54 84.25 17.54L78.47 17.54C78.49 18.65 79.4 19.63 80.71 19.63C81.61 19.63 82.24 19.3 82.65 18.96C82.86 18.79 83.1 18.77 83.23 18.96L83.99 19.98C84.15 20.16 84.17 20.37 83.96 20.57C83.17 21.23 82.06 21.8 80.6 21.8C77.9 21.8 76.03 19.65 76.03 17.07C76.03 14.53 77.9 12.36 80.58 12.36L80.57 12.36Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+		</g>
+	</g>
+</svg>
+            <svg class="banner__brand__img" width="97.000000" height="28.000000" viewBox="0 0 97 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path id="Vector" d="M64.18 9.17C68 9.17 71.34 12.11 71.34 16.08C71.34 20 68.26 23 64.67 23C63.08 23 61.97 22.54 60.9 21.49L60.9 27.58L57.69 27.58L57.69 16.29C57.69 12.06 60.75 9.17 64.18 9.17ZM62.67 0.4C63.47 -0.4 64.68 -0.64 65.72 -0.2C66.77 0.23 67.45 1.26 67.44 2.39C67.44 2.62 67.41 2.86 67.34 3.08L76.19 9.97C77.16 9.2 78.31 8.69 79.53 8.5L79.53 5.28C78.66 4.87 78.11 4 78.1 3.04L78.1 2.96C78.1 1.59 79.21 0.48 80.59 0.48L80.66 0.48C82.03 0.48 83.14 1.59 83.14 2.96L83.14 3.04C83.14 4 82.58 4.87 81.71 5.28L81.71 8.5C84.63 8.95 86.97 11.16 87.57 14.05C88.17 16.95 86.91 19.91 84.4 21.48C81.9 23.05 78.68 22.89 76.34 21.09L73.72 23.71C73.79 23.92 73.82 24.15 73.83 24.37C73.83 25.64 72.8 26.67 71.53 26.67C70.26 26.67 69.23 25.64 69.23 24.37C69.23 23.1 70.26 22.07 71.53 22.07C71.75 22.08 71.98 22.11 72.19 22.18L74.84 19.53C73.17 17.16 73.13 14 74.73 11.58L66.02 4.81C65.6 5.05 65.13 5.18 64.64 5.18C63.51 5.18 62.49 4.5 62.06 3.45C61.63 2.4 61.87 1.2 62.67 0.4ZM32.71 4.76L32.71 10.85C33.78 9.8 34.89 9.33 36.48 9.33C40.06 9.34 43.15 12.33 43.15 16.25C43.15 20.22 39.8 23.16 35.99 23.16C32.56 23.16 29.5 20.27 29.5 16.04L29.5 4.76L32.71 4.76ZM18.69 9.24L18.69 17.17C18.69 18.71 19.94 19.96 21.48 19.96C23.03 19.96 24.28 18.71 24.28 17.17L24.28 9.24L27.47 9.24L27.47 17.17C27.47 20.48 24.79 23.16 21.48 23.16C18.17 23.16 15.48 20.48 15.48 17.17L15.48 9.24L18.69 9.24ZM92.96 6.03L92.96 9.75L95.91 9.75L95.91 12.56L92.96 12.56L92.96 18.12C92.96 19.37 93.5 20.19 95.39 20.19C95.75 20.19 96.16 20.16 96.52 20.14L95.73 23.06C95.31 23.13 94.88 23.17 94.45 23.16C91.71 23.16 89.71 21.7 89.71 18.81L89.71 7.49L92.96 6.03ZM50.49 4.65C52.23 4.65 54.35 5.63 55.4 7.04L53.3 9.52C52.48 8.64 51.23 7.92 50.28 7.92C49.1 7.92 48.03 8.43 48.03 10.06C48.02 13.07 55.68 10.91 55.68 17.87C55.68 21.09 53.02 23.15 49.72 23.15C47.52 23.15 45.68 22.22 44.19 20.39L46.52 17.97C47.39 18.95 48 19.88 49.9 19.88C51.1 19.88 52.15 18.92 52.15 17.84C52.15 14.34 44.49 16.32 44.49 10.06C44.49 6.68 47.01 4.65 50.49 4.65ZM2.96 4.65L2.96 12.4L10.08 12.4L10.08 4.65L13.46 4.65L13.46 23.15L10.08 23.15L10.08 15.65L2.96 15.65L2.96 23.15L-0.41 23.15L-0.41 4.65L2.96 4.65ZM36.46 12.65C35.16 12.65 33.96 13.34 33.3 14.47C32.65 15.6 32.65 16.99 33.3 18.11C33.96 19.24 35.16 19.93 36.46 19.93C38.47 19.93 40.1 18.3 40.1 16.29C40.1 14.28 38.47 12.65 36.46 12.65ZM64.66 12.4C62.65 12.4 61.01 14.03 61.01 16.04C61.01 18.05 62.65 19.69 64.66 19.69C66.67 19.69 68.3 18.05 68.3 16.04C68.3 14.03 66.67 12.4 64.66 12.4ZM80.63 11.86C79.31 11.83 78.07 12.51 77.4 13.64C76.73 14.78 76.73 16.19 77.4 17.33C78.07 18.46 79.31 19.15 80.63 19.11C82.58 19.04 84.13 17.44 84.12 15.48C84.12 13.53 82.58 11.93 80.63 11.86Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+</svg>
+            <svg class="banner__brand__img" width="84.000000" height="40.000000" viewBox="0 0 84 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip4_1734">
+			<rect id="63337525695d8b464eb4428d_Grey%20Logo%20Large%20(4).svg" width="84.000000" height="40.000000" transform="translate(-0.060303 -0.220703)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip4_1733">
+			<rect id="63337525695d8b464eb4428d_Grey%20Logo%20Large%20(4).svg fill" width="84.000000" height="40.000000" transform="translate(-0.060303 -0.220703)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip4_1733)">
+		<g clip-path="url(#clip4_1734)">
+			<path id="Vector" d="M51.5 30.91C46.78 34.4 39.94 36.25 34.05 36.25C26.18 36.29 18.58 33.38 12.73 28.11C12.29 27.71 12.69 27.16 13.22 27.47C19.71 31.19 27.07 33.14 34.55 33.14C40.14 33.11 45.67 31.98 50.82 29.8C51.62 29.47 52.29 30.33 51.51 30.91L51.5 30.91Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+			<path id="Vector" d="M53.47 28.67C54.07 29.45 52.8 32.63 52.23 34.05C52.06 34.48 52.43 34.66 52.81 34.33C55.35 32.21 56 27.78 55.48 27.13C54.97 26.49 50.54 25.95 47.84 27.85C47.43 28.14 47.51 28.54 47.96 28.49C49.48 28.31 52.86 27.9 53.47 28.67ZM48.06 14.44C48.06 14.5 48.08 14.57 48.1 14.62C48.12 14.68 48.16 14.73 48.2 14.78C48.25 14.82 48.3 14.85 48.36 14.87C48.42 14.9 48.48 14.91 48.54 14.9L52.86 14.9L47.9 22.03C47.67 22.41 47.57 22.85 47.59 23.29L47.59 25.16C47.59 25.43 47.89 25.74 48.18 25.59C49.53 24.89 51.03 24.53 52.55 24.53C54.07 24.53 55.56 24.89 56.91 25.59C57.22 25.75 57.52 25.44 57.52 25.17L57.52 23.2C57.52 23.06 57.47 22.91 57.4 22.79C57.32 22.66 57.21 22.55 57.08 22.48C55.63 21.74 54 21.39 52.37 21.48L56.65 15.37C57.05 14.82 57.27 14.48 57.27 14.21L57.27 12.6C57.27 12.54 57.26 12.48 57.23 12.42C57.21 12.37 57.18 12.31 57.13 12.27C57.09 12.23 57.03 12.19 56.98 12.17C56.92 12.15 56.86 12.14 56.8 12.14L48.53 12.14C48.47 12.14 48.41 12.15 48.35 12.17C48.29 12.19 48.24 12.23 48.2 12.27C48.16 12.32 48.12 12.37 48.1 12.42C48.07 12.48 48.06 12.54 48.06 12.6L48.06 14.44ZM17.93 25.96C17.99 25.96 18.05 25.95 18.11 25.93C18.17 25.91 18.22 25.87 18.26 25.83C18.31 25.79 18.34 25.74 18.37 25.68C18.39 25.62 18.41 25.56 18.41 25.5L18.41 18.66C18.41 17.16 18.34 15.11 20.15 15.11C21.96 15.11 21.7 17.22 21.7 18.66L21.7 25.5C21.7 25.62 21.74 25.74 21.83 25.82C21.91 25.91 22.03 25.96 22.15 25.96L24.67 25.96C24.73 25.96 24.79 25.95 24.85 25.93C24.91 25.91 24.96 25.87 25.01 25.83C25.05 25.79 25.09 25.74 25.11 25.68C25.14 25.62 25.15 25.56 25.15 25.5L25.15 18.66C25.15 17.92 25.13 16.84 25.39 16.19C25.5 15.89 25.71 15.62 25.98 15.43C26.24 15.25 26.56 15.14 26.89 15.13C27.62 15.13 28.18 15.37 28.37 16.24C28.49 16.76 28.44 18.12 28.44 18.66L28.44 25.5C28.44 25.62 28.49 25.74 28.57 25.82C28.66 25.91 28.77 25.96 28.89 25.96L31.4 25.96C31.52 25.96 31.65 25.92 31.74 25.83C31.83 25.74 31.88 25.62 31.89 25.5L31.89 17.36C31.89 15.97 32.05 14.39 31.25 13.31C30.84 12.8 30.31 12.4 29.7 12.16C29.09 11.92 28.42 11.85 27.77 11.94C27.13 12.04 26.52 12.31 26.01 12.72C25.5 13.14 25.1 13.68 24.87 14.29C24.16 12.66 23.18 11.9 21.61 11.9C20.03 11.9 18.91 12.66 18.3 14.29L18.25 14.29L18.25 12.62C18.24 12.5 18.19 12.4 18.1 12.32C18.02 12.24 17.91 12.19 17.79 12.19L15.46 12.19C15.33 12.18 15.21 12.23 15.12 12.32C15.03 12.41 14.98 12.53 14.97 12.65L14.97 25.54C14.98 25.65 15.03 25.76 15.12 25.83C15.2 25.91 15.31 25.96 15.42 25.96L17.93 25.96L17.93 25.96ZM64.38 11.9C60.75 11.9 58.72 15.02 58.72 19.04C58.72 23.06 60.72 26.23 64.38 26.23C67.9 26.23 70.13 23.11 70.13 19.17C70.13 15.11 68.11 11.9 64.38 11.9ZM64.38 23.56C62.41 23.56 62.43 20.2 62.43 18.62C62.43 17.04 62.55 14.52 64.41 14.52C65.21 14.52 65.76 14.87 66.05 15.77C66.34 16.89 66.47 18.04 66.43 19.19C66.43 20.86 66.33 23.57 64.38 23.57L64.38 23.56ZM74.97 25.96C75.09 25.96 75.22 25.92 75.31 25.83C75.4 25.74 75.45 25.62 75.46 25.5L75.46 18.55C75.41 17.72 75.55 16.88 75.86 16.11C75.98 15.81 76.18 15.56 76.43 15.38C76.69 15.2 77 15.09 77.31 15.08C79.05 15.08 78.89 17.14 78.89 18.55L78.89 25.55C78.9 25.66 78.95 25.76 79.03 25.84C79.12 25.91 79.22 25.96 79.33 25.96L81.86 25.96C81.97 25.96 82.08 25.92 82.17 25.85C82.26 25.77 82.32 25.67 82.34 25.55L82.34 17.44C82.34 16.19 82.34 14.44 81.67 13.42C81.36 12.94 80.92 12.54 80.41 12.27C79.89 12 79.31 11.88 78.74 11.9C77 11.9 76.01 12.74 75.31 14.51L75.26 14.51L75.26 12.53C75.24 12.43 75.18 12.34 75.1 12.28C75.02 12.21 74.92 12.17 74.81 12.17L72.48 12.17C72.36 12.17 72.25 12.21 72.16 12.29C72.07 12.37 72.02 12.47 72 12.59L72 25.5C72 25.62 72.05 25.74 72.13 25.82C72.22 25.91 72.33 25.96 72.45 25.96L74.96 25.96L74.97 25.96ZM45.96 23.6C45.5 22.96 45.01 22.45 45.01 21.26L45.01 17.35C45.01 15.69 45.12 14.17 43.9 13.02C42.93 12.11 41.34 11.77 40.12 11.77C37.72 11.77 35.05 12.67 34.49 15.62C34.48 15.68 34.48 15.75 34.49 15.8C34.51 15.86 34.53 15.92 34.57 15.97C34.6 16.02 34.65 16.06 34.7 16.09C34.75 16.12 34.81 16.14 34.87 16.15L37.31 16.41C37.42 16.39 37.52 16.34 37.6 16.25C37.68 16.17 37.73 16.06 37.74 15.95C37.95 14.93 38.8 14.44 39.76 14.44C40.03 14.43 40.3 14.48 40.55 14.6C40.8 14.72 41.01 14.89 41.17 15.11C41.53 15.62 41.48 16.33 41.48 16.93L41.48 17.26C40.02 17.43 38.12 17.53 36.75 18.13C35.94 18.46 35.25 19.03 34.77 19.77C34.29 20.5 34.05 21.37 34.09 22.24C34.09 24.85 35.73 26.16 37.84 26.16C39.64 26.16 40.61 25.74 41.99 24.33C42.37 24.97 42.85 25.54 43.43 26C43.52 26.05 43.63 26.08 43.74 26.07C43.84 26.06 43.94 26.01 44.03 25.94C44.53 25.49 45.44 24.7 45.95 24.28C46 24.23 46.03 24.18 46.06 24.12C46.08 24.06 46.1 24 46.1 23.94C46.1 23.87 46.09 23.81 46.06 23.75C46.04 23.7 46 23.64 45.96 23.6ZM41.48 19.8C41.48 20.78 41.5 21.59 41.01 22.47C40.85 22.8 40.6 23.08 40.29 23.28C39.99 23.48 39.63 23.59 39.27 23.61C38.3 23.61 37.74 22.87 37.74 21.79C37.74 19.65 39.66 19.26 41.48 19.26L41.48 19.8ZM13 23.6C12.54 22.96 12.05 22.45 12.05 21.26L12.05 17.35C12.05 15.69 12.17 14.17 10.95 13.02C10 12.11 8.39 11.77 7.16 11.77C4.77 11.77 2.1 12.67 1.54 15.62C1.53 15.68 1.53 15.74 1.54 15.8C1.56 15.86 1.58 15.92 1.61 15.97C1.65 16.02 1.69 16.06 1.75 16.09C1.8 16.12 1.86 16.14 1.92 16.15L4.35 16.41C4.46 16.39 4.57 16.34 4.65 16.25C4.72 16.17 4.77 16.06 4.79 15.95C5 14.93 5.85 14.44 6.81 14.44C7.08 14.43 7.35 14.48 7.6 14.6C7.84 14.72 8.06 14.89 8.22 15.11C8.57 15.62 8.53 16.33 8.53 16.93L8.53 17.26C7.07 17.43 5.17 17.53 3.8 18.13C2.99 18.46 2.29 19.03 1.82 19.77C1.34 20.5 1.1 21.37 1.13 22.24C1.13 24.85 2.78 26.16 4.9 26.16C6.68 26.16 7.66 25.74 9.04 24.33C9.41 24.97 9.9 25.54 10.48 26C10.57 26.05 10.68 26.08 10.78 26.07C10.89 26.06 10.99 26.01 11.07 25.94C11.57 25.49 12.49 24.7 13 24.28C13.04 24.23 13.08 24.18 13.11 24.12C13.13 24.06 13.15 24 13.15 23.94C13.15 23.87 13.13 23.81 13.11 23.75C13.08 23.69 13.05 23.64 13 23.6ZM8.53 19.8C8.53 20.78 8.55 21.59 8.06 22.47C7.89 22.8 7.65 23.08 7.34 23.28C7.04 23.48 6.68 23.59 6.32 23.61C5.35 23.61 4.79 22.87 4.79 21.79C4.79 19.65 6.71 19.26 8.53 19.26L8.53 19.8Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+		</g>
+	</g>
+</svg>
+            <svg class="banner__brand__img" width="106.000000" height="30.000000" viewBox="0 0 106 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip4_1740">
+			<rect id="63337525695d8b1160b4428a_Grey%20Logo%20Large%20(1).svg" width="106.000000" height="30.000000" transform="translate(-0.310303 -0.220703)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip4_1739">
+			<rect id="63337525695d8b1160b4428a_Grey%20Logo%20Large%20(1).svg fill" width="106.000000" height="30.000000" transform="translate(-0.310303 -0.220703)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip4_1739)">
+		<g clip-path="url(#clip4_1740)">
+			<mask id="mask4_1745" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.356689" y="-0.220703" width="104.765991" height="30.000000">
+				<path id="Vector" d="M0.35 -0.23L105.12 -0.23L105.12 29.77L0.35 29.77L0.35 -0.23Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+			</mask>
+			<g mask="url(#mask4_1745)">
+				<path id="Vector" d="M36.52 16.39C35.63 15.9 35.16 15.5 35.16 14.94C35.16 14.21 35.79 13.77 36.8 13.77C37.97 13.77 39 14.26 39 14.26L39.82 11.75C39.82 11.75 39.07 11.16 36.84 11.16C33.75 11.16 31.59 12.95 31.59 15.43C31.59 16.84 32.6 17.91 33.94 18.69C35.02 19.3 35.39 19.74 35.39 20.38C35.39 21.06 34.85 21.59 33.84 21.59C32.34 21.59 30.94 20.82 30.94 20.82L30.07 23.33C30.07 23.33 31.38 24.2 33.56 24.2C36.75 24.2 39.02 22.63 39.02 19.81C39.07 18.27 37.9 17.19 36.52 16.39ZM49.22 11.12C47.65 11.12 46.43 11.87 45.47 12.99L45.42 12.97L46.78 5.84L43.24 5.84L39.8 23.96L43.34 23.96L44.51 17.77C44.98 15.43 46.17 14 47.3 14C48.09 14 48.4 14.54 48.4 15.31C48.4 15.81 48.35 16.39 48.23 16.88L46.9 23.99L50.44 23.99L51.82 16.67C51.98 15.9 52.08 14.99 52.08 14.35C52.1 12.31 51.05 11.12 49.22 11.12ZM60.12 11.12C55.85 11.12 53.02 14.96 53.02 19.25C53.02 21.99 54.7 24.22 57.89 24.22C62.09 24.22 64.9 20.47 64.9 16.09C64.92 13.53 63.45 11.12 60.12 11.12ZM58.38 21.48C57.16 21.48 56.67 20.45 56.67 19.16C56.67 17.12 57.73 13.81 59.65 13.81C60.91 13.81 61.31 14.89 61.31 15.95C61.31 18.15 60.26 21.48 58.38 21.48ZM73.99 11.12C71.6 11.12 70.24 13.23 70.24 13.23L70.2 13.23L70.41 11.33L67.27 11.33C67.1 12.62 66.82 14.56 66.54 16.04L64.08 29.02L67.62 29.02L68.6 23.77L68.67 23.77C68.67 23.77 69.4 24.24 70.76 24.24C74.93 24.24 77.65 19.98 77.65 15.66C77.65 13.25 76.59 11.12 73.99 11.12ZM70.62 21.55C69.7 21.55 69.16 21.03 69.16 21.03L69.75 17.73C70.17 15.52 71.32 14.05 72.54 14.05C73.62 14.05 73.95 15.06 73.95 15.99C73.95 18.27 72.59 21.55 70.62 21.55ZM82.71 6.01C81.59 6.01 80.67 6.9 80.67 8.07C80.67 9.13 81.33 9.85 82.34 9.85L82.38 9.85C83.48 9.85 84.45 9.1 84.47 7.79C84.49 6.76 83.79 6.01 82.71 6.01Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+				<path id="Vector" d="M77.74 23.96L81.3 23.96L83.72 11.4L80.13 11.4L77.74 23.96Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+				<path id="Vector" d="M92.72 11.35L90.26 11.35L90.38 10.77C90.59 9.55 91.29 8.47 92.48 8.47C93.12 8.47 93.61 8.66 93.61 8.66L94.31 5.89C94.31 5.89 93.7 5.59 92.39 5.59C91.13 5.59 89.88 5.94 88.92 6.76C87.7 7.79 87.14 9.27 86.86 10.77L86.77 11.35L85.13 11.35L84.61 14.02L86.25 14.02L84.38 23.94L87.91 23.94L89.79 14.02L92.23 14.02L92.72 11.35ZM101.25 11.4C101.25 11.4 99.02 16.98 98.04 20.02L97.99 20.02C97.92 19.04 97.13 11.4 97.13 11.4L93.4 11.4L95.53 22.93C95.58 23.19 95.55 23.35 95.46 23.52C95.04 24.31 94.36 25.09 93.54 25.65C92.88 26.14 92.13 26.45 91.55 26.66L92.53 29.66C93.26 29.49 94.73 28.91 96 27.74C97.62 26.21 99.12 23.89 100.64 20.7L104.98 11.4L101.25 11.4ZM17.23 28.91L25.99 27.01C25.99 27.01 22.83 5.61 22.8 5.47C22.78 5.33 22.66 5.24 22.55 5.24C22.43 5.24 20.2 5.07 20.2 5.07C20.2 5.07 18.66 3.52 18.47 3.36C18.42 3.31 18.38 3.29 18.33 3.27L17.23 28.91ZM17.95 3.22C17.93 3.22 17.88 3.24 17.86 3.24C17.84 3.24 17.51 3.34 16.99 3.5C16.48 2 15.56 0.62 13.95 0.62L13.8 0.62C13.34 0.03 12.77 -0.23 12.28 -0.23C8.51 -0.23 6.7 4.49 6.14 6.88C4.69 7.32 3.63 7.65 3.52 7.7C2.7 7.95 2.67 7.98 2.58 8.75C2.48 9.31 0.35 25.84 0.35 25.84L16.83 28.93L17.95 3.22ZM13.66 4.37L13.66 4.53C12.75 4.81 11.74 5.12 10.76 5.42C11.32 3.27 12.38 2.21 13.29 1.81C13.52 2.42 13.66 3.24 13.66 4.37ZM12.16 0.78C12.33 0.78 12.49 0.83 12.66 0.95C11.46 1.51 10.15 2.94 9.61 5.8C8.81 6.06 8.04 6.29 7.31 6.5C7.95 4.32 9.47 0.78 12.16 0.78ZM12.82 13.51C12.82 13.51 11.84 12.99 10.66 12.99C8.91 12.99 8.84 14.09 8.84 14.38C8.84 15.88 12.77 16.46 12.77 20C12.77 22.79 11.02 24.57 8.63 24.57C5.77 24.57 4.31 22.79 4.31 22.79L5.09 20.26C5.09 20.26 6.59 21.55 7.85 21.55C8.67 21.55 9.02 20.89 9.02 20.42C9.02 18.45 5.79 18.36 5.79 15.13C5.79 12.41 7.73 9.76 11.7 9.76C13.22 9.76 13.97 10.2 13.97 10.2L12.82 13.51ZM14.32 1.65C15.16 1.74 15.7 2.7 16.05 3.78C15.63 3.92 15.16 4.06 14.65 4.23L14.65 3.92C14.65 3.01 14.53 2.26 14.32 1.65Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+			</g>
+		</g>
+	</g>
+</svg>
+            <svg class="banner__brand__img" width="95.000000" height="24.000000" viewBox="0 0 95 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip4_1751">
+			<rect id="63337525695d8b0585b4428b_Grey%20Logo%20Large%20(3).svg" width="95.000000" height="24.000000" transform="translate(-0.560303 -0.810547)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip4_1750">
+			<rect id="63337525695d8b0585b4428b_Grey%20Logo%20Large%20(3).svg fill" width="95.000000" height="24.000000" transform="translate(-0.560303 -0.810547)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip4_1750)">
+		<g clip-path="url(#clip4_1751)">
+			<mask id="mask4_1754" mask-type="alpha" maskUnits="userSpaceOnUse" x="-0.127686" y="-0.810547" width="94.300903" height="24.000000">
+				<path id="Vector" d="M-0.13 -0.82L94.17 -0.82L94.17 23.18L-0.13 23.18L-0.13 -0.82Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+			</mask>
+			<g mask="url(#mask4_1754)">
+				<path id="Vector" d="M30.07 18.03L31.25 15.3C32.51 16.24 34.2 16.74 35.87 16.74C37.09 16.74 37.87 16.27 37.87 15.54C37.85 13.54 30.51 15.11 30.45 10.08C30.43 7.52 32.7 5.55 35.92 5.55C37.83 5.55 39.75 6.02 41.1 7.1L40.01 9.88C38.76 9.09 37.21 8.51 35.73 8.51C34.73 8.51 34.07 8.99 34.07 9.6C34.09 11.57 41.49 10.49 41.56 15.3C41.56 17.91 39.35 19.75 36.17 19.75C33.84 19.75 31.7 19.2 30.07 18.03L30.07 18.03ZM75.12 14.31C74.75 14.97 74.18 15.48 73.49 15.77C72.8 16.06 72.03 16.11 71.31 15.92C70.59 15.73 69.95 15.31 69.49 14.71C69.03 14.12 68.79 13.4 68.79 12.65C68.79 11.9 69.03 11.17 69.49 10.58C69.95 9.99 70.59 9.56 71.31 9.37C72.03 9.18 72.8 9.24 73.49 9.53C74.18 9.82 74.75 10.33 75.12 10.98L78.36 9.18C77.59 7.81 76.39 6.73 74.94 6.11C73.5 5.49 71.88 5.37 70.36 5.77C68.84 6.16 67.49 7.05 66.53 8.3C65.57 9.54 65.05 11.07 65.05 12.65C65.05 14.22 65.57 15.75 66.53 16.99C67.49 18.24 68.84 19.13 70.36 19.52C71.88 19.92 73.5 19.8 74.94 19.18C76.39 18.56 77.59 17.48 78.36 16.11L75.12 14.31ZM43.19 -0.34L47.24 -0.34L47.24 19.48L43.19 19.48L43.19 -0.34ZM79.95 -0.34L79.95 19.48L84 19.48L84 13.54L88.81 19.48L94 19.48L87.88 12.42L93.54 5.83L88.58 5.83L84 11.3L84 -0.34L79.95 -0.34ZM59.29 14.35C58.94 14.87 58.47 15.3 57.92 15.6C57.37 15.89 56.75 16.04 56.13 16.04C55.23 16.04 54.37 15.68 53.73 15.04C53.1 14.41 52.74 13.55 52.74 12.65C52.74 11.75 53.1 10.89 53.73 10.25C54.37 9.62 55.23 9.26 56.13 9.26C57.49 9.26 58.7 10.01 59.29 11L59.29 14.35ZM59.29 5.83L59.29 7.44C58.63 6.32 56.98 5.54 55.25 5.54C51.69 5.54 48.89 8.69 48.89 12.63C48.89 16.57 51.69 19.75 55.25 19.75C56.97 19.75 58.63 18.97 59.29 17.86L59.29 19.46L63.34 19.46L63.34 5.83L59.29 5.83ZM5.02 14.33C5.02 14.83 4.87 15.31 4.59 15.72C4.32 16.13 3.93 16.45 3.47 16.64C3.01 16.83 2.51 16.88 2.03 16.79C1.54 16.69 1.1 16.45 0.75 16.1C0.4 15.75 0.16 15.3 0.06 14.82C-0.03 14.33 0.02 13.83 0.21 13.38C0.4 12.92 0.72 12.53 1.13 12.25C1.54 11.98 2.02 11.83 2.52 11.83L5.02 11.83L5.02 14.33ZM6.27 14.33C6.26 14 6.31 13.67 6.44 13.35C6.56 13.04 6.74 12.76 6.97 12.52C7.2 12.28 7.48 12.09 7.79 11.96C8.1 11.83 8.43 11.76 8.77 11.76C9.1 11.76 9.43 11.83 9.74 11.96C10.05 12.09 10.33 12.28 10.56 12.52C10.79 12.76 10.97 13.04 11.09 13.35C11.22 13.67 11.27 14 11.26 14.33L11.26 20.58C11.24 21.23 10.97 21.85 10.51 22.3C10.04 22.75 9.42 23.01 8.77 23.01C8.11 23.01 7.49 22.75 7.02 22.3C6.56 21.85 6.29 21.23 6.27 20.58L6.27 14.33ZM8.77 4.29C8.27 4.29 7.79 4.15 7.38 3.87C6.97 3.6 6.65 3.21 6.46 2.75C6.27 2.29 6.22 1.79 6.32 1.3C6.41 0.82 6.65 0.37 7 0.03C7.35 -0.32 7.8 -0.56 8.28 -0.66C8.77 -0.75 9.27 -0.7 9.73 -0.51C10.18 -0.33 10.57 0 10.85 0.41C11.12 0.82 11.27 1.3 11.27 1.8L11.27 4.29L8.77 4.29L8.77 4.29ZM8.77 5.57C9.1 5.56 9.43 5.62 9.74 5.74C10.06 5.86 10.34 6.04 10.58 6.27C10.82 6.51 11.01 6.79 11.14 7.09C11.27 7.4 11.34 7.73 11.34 8.07C11.34 8.4 11.27 8.73 11.14 9.04C11.01 9.35 10.82 9.63 10.58 9.86C10.34 10.09 10.06 10.28 9.74 10.4C9.43 10.52 9.1 10.58 8.77 10.57L2.5 10.57C2.17 10.58 1.83 10.52 1.52 10.4C1.21 10.28 0.93 10.09 0.69 9.86C0.45 9.63 0.26 9.35 0.13 9.04C0 8.73 -0.07 8.4 -0.07 8.07C-0.07 7.73 0 7.4 0.13 7.09C0.26 6.79 0.45 6.51 0.69 6.27C0.93 6.04 1.21 5.86 1.52 5.74C1.83 5.62 2.17 5.56 2.5 5.57L8.77 5.57ZM18.78 8.07C18.78 7.57 18.93 7.09 19.2 6.68C19.48 6.27 19.87 5.95 20.33 5.76C20.78 5.57 21.29 5.52 21.77 5.61C22.26 5.71 22.7 5.95 23.05 6.3C23.4 6.65 23.64 7.09 23.73 7.58C23.83 8.06 23.78 8.57 23.59 9.02C23.4 9.48 23.08 9.87 22.67 10.15C22.26 10.42 21.77 10.57 21.28 10.57L18.78 10.57L18.78 8.07L18.78 8.07ZM17.53 8.07C17.54 8.4 17.48 8.73 17.36 9.04C17.24 9.36 17.06 9.64 16.83 9.88C16.59 10.12 16.31 10.31 16.01 10.44C15.7 10.57 15.37 10.64 15.03 10.64C14.7 10.64 14.37 10.57 14.06 10.44C13.75 10.31 13.47 10.12 13.24 9.88C13.01 9.64 12.82 9.36 12.7 9.04C12.58 8.73 12.52 8.4 12.53 8.07L12.53 1.8C12.52 1.46 12.58 1.13 12.7 0.82C12.82 0.51 13.01 0.22 13.24 -0.02C13.47 -0.26 13.75 -0.45 14.06 -0.58C14.37 -0.71 14.7 -0.78 15.03 -0.78C15.37 -0.78 15.7 -0.71 16.01 -0.58C16.31 -0.45 16.59 -0.26 16.83 -0.02C17.06 0.22 17.24 0.51 17.36 0.82C17.48 1.13 17.54 1.46 17.53 1.8L17.53 8.07ZM15.04 18.08C15.53 18.08 16.01 18.23 16.42 18.5C16.84 18.78 17.16 19.17 17.35 19.63C17.53 20.08 17.58 20.59 17.49 21.07C17.39 21.56 17.15 22 16.8 22.35C16.45 22.7 16.01 22.94 15.52 23.03C15.04 23.13 14.53 23.08 14.08 22.89C13.62 22.7 13.23 22.38 12.96 21.97C12.68 21.56 12.54 21.07 12.54 20.58L12.54 18.08L15.04 18.08ZM15.04 16.83C14.7 16.84 14.37 16.78 14.06 16.66C13.75 16.54 13.46 16.36 13.22 16.13C12.98 15.89 12.79 15.61 12.66 15.31C12.53 15 12.46 14.67 12.46 14.33C12.46 14 12.53 13.67 12.66 13.36C12.79 13.05 12.98 12.77 13.22 12.54C13.46 12.31 13.75 12.12 14.06 12C14.37 11.88 14.7 11.82 15.04 11.83L21.31 11.83C21.96 11.85 22.57 12.12 23.03 12.59C23.48 13.06 23.73 13.68 23.73 14.33C23.73 14.98 23.48 15.61 23.03 16.07C22.57 16.54 21.96 16.81 21.31 16.83L15.04 16.83Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+			</g>
+		</g>
+	</g>
+</svg>
+            <svg class="banner__brand__img" width="127.000000" height="25.000000" viewBox="0 0 127 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip4_1760">
+			<rect id="63337525695d8bb6c6b4428e_Grey%20Logo%20Large%20(6).svg" width="126.708214" height="24.809999" transform="translate(-0.669434 -0.220703)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<clipPath id="clip4_1759">
+			<rect id="63337525695d8bb6c6b4428e_Grey%20Logo%20Large%20(6).svg fill" width="126.750000" height="24.809999" transform="translate(-0.690308 -0.220703)" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clip4_1759)">
+		<g clip-path="url(#clip4_1760)">
+			<mask id="mask4_1764" mask-type="alpha" maskUnits="userSpaceOnUse" x="-0.314697" y="-0.220703" width="126.002930" height="24.809570">
+				<path id="Vector" d="M-0.32 -0.23L125.68 -0.23L125.68 24.58L-0.32 24.58L-0.32 -0.23Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+			</mask>
+			<g mask="url(#mask4_1764)">
+				<path id="Vector" d="M14.3 4.44L6.99 9.1L14.3 13.76L6.99 18.42L-0.32 13.74L6.99 9.07L-0.32 4.44L6.99 -0.23L14.3 4.44ZM6.95 19.92L14.26 15.26L21.57 19.92L14.26 24.58L6.95 19.92ZM14.3 13.74L21.6 9.07L14.3 4.44L21.57 -0.23L28.88 4.44L21.57 9.1L28.88 13.76L21.57 18.42L14.3 13.74Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+			</g>
+			<path id="Vector" d="M34.61 4.44L40.52 4.44C44.29 4.44 47.4 6.62 47.4 11.59L47.4 12.64C47.4 17.65 44.49 19.91 40.63 19.91L34.61 19.91L34.61 4.44ZM37.91 7.25L37.91 17.09L40.44 17.09C42.59 17.09 44.02 15.69 44.02 12.58L44.02 11.76C44.02 8.64 42.51 7.25 40.33 7.25L37.91 7.25ZM49.15 7.4L51.8 7.4L52.22 10.31C52.73 8.33 54.01 7.27 56.34 7.27L57.16 7.27L57.16 10.61L55.8 10.61C53.12 10.61 52.46 11.54 52.46 14.19L52.46 19.95L49.2 19.95L49.2 7.4L49.15 7.4ZM57.82 13.92L57.82 13.57C57.82 9.37 60.5 7.08 64.16 7.08C67.89 7.08 70.5 9.37 70.5 13.57L70.5 13.92C70.5 18.04 67.96 20.26 64.16 20.26C60.11 20.22 57.82 18.06 57.82 13.92ZM67.16 13.89L67.16 13.57C67.16 11.24 65.98 9.84 64.12 9.84C62.29 9.84 61.08 11.13 61.08 13.57L61.08 13.89C61.08 16.14 62.25 17.43 64.12 17.43C65.98 17.39 67.16 16.14 67.16 13.89ZM72.21 7.4L74.93 7.4L75.25 9.77C75.9 8.18 77.3 7.08 79.37 7.08C82.55 7.08 84.66 9.37 84.66 13.62L84.66 13.97C84.66 18.09 82.33 20.27 79.37 20.27C77.39 20.27 76.03 19.38 75.36 17.94L75.36 24.28L72.17 24.28L72.21 7.4ZM81.34 13.89L81.34 13.61C81.34 11.11 80.06 9.88 78.35 9.88C76.52 9.88 75.31 11.28 75.31 13.61L75.31 13.85C75.31 16.07 76.48 17.46 78.31 17.46C80.18 17.43 81.34 16.23 81.34 13.89ZM89.48 17.63L89.21 19.92L86.41 19.92L86.41 3.2L89.6 3.2L89.6 9.62C90.3 7.98 91.7 7.08 93.68 7.08C96.68 7.12 98.9 9.19 98.9 13.34L98.9 13.74C98.9 17.89 96.79 20.27 93.6 20.27C91.5 20.22 90.14 19.25 89.48 17.63ZM95.54 13.74L95.54 13.42C95.54 11.13 94.3 9.84 92.55 9.84C90.76 9.84 89.51 11.28 89.51 13.46L89.51 13.74C89.51 16.07 90.72 17.43 92.51 17.43C94.42 17.43 95.54 16.23 95.54 13.74ZM100.29 13.92L100.29 13.57C100.29 9.37 102.98 7.08 106.63 7.08C110.36 7.08 112.97 9.37 112.97 13.57L112.97 13.92C112.97 18.04 110.4 20.26 106.63 20.26C102.59 20.22 100.29 18.06 100.29 13.92ZM109.66 13.89L109.66 13.57C109.66 11.24 108.49 9.84 106.62 9.84C104.79 9.84 103.58 11.13 103.58 13.57L103.58 13.89C103.58 16.14 104.76 17.43 106.62 17.43C108.5 17.39 109.66 16.14 109.66 13.89ZM117.24 13.42L112.85 7.4L116.61 7.4L119.15 11.16L121.72 7.4L125.45 7.4L120.98 13.38L125.68 19.92L121.99 19.92L119.12 15.76L116.32 19.92L112.47 19.92L117.24 13.42Z" fill-opacity="1.000000" fill-rule="evenodd"/>
+		</g>
+	</g>
+</svg>
+
           </div>
         </div>
-        <div class="news__slider">
-          <div class="swiper-wrapper">
-                <div class="newsCard swiper-slide" style="width: 390px"><img class="newsCard__image" src="img/2003-p-500.jpg" alt="image"/>
-                  <div class="newsCard__container">
-                        <div class="tag tag__blue">Resources</div>
-                    <p class="newsCard__text">Lorem ipsum dolor sit amet.</p>
-                    <div class="newsCard__date__wrapper"><img src="img/dot.svg" alt="dot"/>
-                      <p class="newsCard__date">October 24, 2022</p>
+      </section>
+      <section class="jobs" data-section="company">
+        <div class="container container__jobs">
+          <div class="jobs__header">
+            <div class="jobs__text__wrapper">
+              <p class="jobs__title">Explore the latest job openings</p>
+              <p class="jobs__text">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus,
+                pharetra leo et, efficitur tortor. Fusce vel convallis magna.
+              </p>
+            </div>
+                  <button class="btn primary" type="button">See All Jobs
+                  </button>
+          </div>
+          <div class="jobs__card__container">
+                  <div class="jobsCard swiper-slide" style="width: 360px">
+                    <div class="jobsCard__header">
+                      <div class="jobsCard__header__logo"><img src="img/dribble.svg" alt="logo"></div>
+                      <div class="jobsCard__header__wrapper">
+                        <p class="jobsCard__header__title">Dribble</p>
+                        <p class="jobsCard__header__date">October 25, 2022</p>
+                      </div>
                     </div>
-                    <button class="newsCard__btn">Read More<img class="newsCard__btn__img" src="img/smallArrow.svg" alt="arrow"/></button>
-                  </div>
-                </div>
-                <div class="newsCard swiper-slide" style="width: 390px"><img class="newsCard__image" src="img/2003-p-500.jpg" alt="image"/>
-                  <div class="newsCard__container">
-                        <div class="tag tag__blue">Resources</div>
-                    <p class="newsCard__text">Lorem ipsum dolor sit amet.</p>
-                    <div class="newsCard__date__wrapper"><img src="img/dot.svg" alt="dot"/>
-                      <p class="newsCard__date">October 24, 2022</p>
+                    <div class="jobsCard__content">
+                      <p class="jobsCard__content__text">Front End Developer</p>
+                      <div class="jobsCard__tags__wrapper">
+                              <div class="tag tag__blue">Marketing</div>
+                              <div class="tag tag__orange">Part Time</div>
+                      </div>
                     </div>
-                    <button class="newsCard__btn">Read More<img class="newsCard__btn__img" src="img/smallArrow.svg" alt="arrow"/></button>
-                  </div>
-                </div>
-                <div class="newsCard swiper-slide" style="width: 390px"><img class="newsCard__image" src="img/2003-p-500.jpg" alt="image"/>
-                  <div class="newsCard__container">
-                        <div class="tag tag__blue">Resources</div>
-                    <p class="newsCard__text">Lorem ipsum dolor sit amet.</p>
-                    <div class="newsCard__date__wrapper"><img src="img/dot.svg" alt="dot"/>
-                      <p class="newsCard__date">October 24, 2022</p>
+                    <div class="jobsCard__footer">
+                      <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt="">
+                        <p class="jobsCard__city">San Antonio</p>
+                      </div>
+                      <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt="">
+                        <p class="jobsCard__salary">130k-160k</p>
+                      </div>
                     </div>
-                    <button class="newsCard__btn">Read More<img class="newsCard__btn__img" src="img/smallArrow.svg" alt="arrow"/></button>
                   </div>
-                </div>
-                <div class="newsCard swiper-slide" style="width: 390px"><img class="newsCard__image" src="img/2003-p-500.jpg" alt="image"/>
-                  <div class="newsCard__container">
-                        <div class="tag tag__blue">Resources</div>
-                    <p class="newsCard__text">Lorem ipsum dolor sit amet.</p>
-                    <div class="newsCard__date__wrapper"><img src="img/dot.svg" alt="dot"/>
-                      <p class="newsCard__date">October 24, 2022</p>
+                  <div class="jobsCard swiper-slide" style="width: 360px">
+                    <div class="jobsCard__header">
+                      <div class="jobsCard__header__logo"><img src="img/dribble.svg" alt="logo"></div>
+                      <div class="jobsCard__header__wrapper">
+                        <p class="jobsCard__header__title">Dribble</p>
+                        <p class="jobsCard__header__date">October 25, 2022</p>
+                      </div>
                     </div>
-                    <button class="newsCard__btn">Read More<img class="newsCard__btn__img" src="img/smallArrow.svg" alt="arrow"/></button>
-                  </div>
-                </div>
-                <div class="newsCard swiper-slide" style="width: 390px"><img class="newsCard__image" src="img/2003-p-500.jpg" alt="image"/>
-                  <div class="newsCard__container">
-                        <div class="tag tag__blue">Resources</div>
-                    <p class="newsCard__text">Lorem ipsum dolor sit amet.</p>
-                    <div class="newsCard__date__wrapper"><img src="img/dot.svg" alt="dot"/>
-                      <p class="newsCard__date">October 24, 2022</p>
+                    <div class="jobsCard__content">
+                      <p class="jobsCard__content__text">Backend Developer</p>
+                      <div class="jobsCard__tags__wrapper">
+                              <div class="tag tag__blue">Design</div>
+                              <div class="tag tag__orange">Full Time</div>
+                      </div>
                     </div>
-                    <button class="newsCard__btn">Read More<img class="newsCard__btn__img" src="img/smallArrow.svg" alt="arrow"/></button>
-                  </div>
-                </div>
-                <div class="newsCard swiper-slide" style="width: 390px"><img class="newsCard__image" src="img/2003-p-500.jpg" alt="image"/>
-                  <div class="newsCard__container">
-                        <div class="tag tag__blue">Resources</div>
-                    <p class="newsCard__text">Lorem ipsum dolor sit amet.</p>
-                    <div class="newsCard__date__wrapper"><img src="img/dot.svg" alt="dot"/>
-                      <p class="newsCard__date">October 24, 2022</p>
+                    <div class="jobsCard__footer">
+                      <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt="">
+                        <p class="jobsCard__city">Dallas</p>
+                      </div>
+                      <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt="">
+                        <p class="jobsCard__salary">50k-70k</p>
+                      </div>
                     </div>
-                    <button class="newsCard__btn">Read More<img class="newsCard__btn__img" src="img/smallArrow.svg" alt="arrow"/></button>
                   </div>
-                </div>
+                  <div class="jobsCard swiper-slide" style="width: 360px">
+                    <div class="jobsCard__header">
+                      <div class="jobsCard__header__logo"><img src="img/tokopedia.svg" alt="logo"></div>
+                      <div class="jobsCard__header__wrapper">
+                        <p class="jobsCard__header__title">Tokopedia</p>
+                        <p class="jobsCard__header__date">March 30, 2021</p>
+                      </div>
+                    </div>
+                    <div class="jobsCard__content">
+                      <p class="jobsCard__content__text">Scrum Master</p>
+                      <div class="jobsCard__tags__wrapper">
+                              <div class="tag tag__blue">Marketing</div>
+                              <div class="tag tag__orange">Part Time</div>
+                      </div>
+                    </div>
+                    <div class="jobsCard__footer">
+                      <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt="">
+                        <p class="jobsCard__city">San Antonio</p>
+                      </div>
+                      <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt="">
+                        <p class="jobsCard__salary">130k-160k</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="jobsCard swiper-slide" style="width: 360px">
+                    <div class="jobsCard__header">
+                      <div class="jobsCard__header__logo"><img src="img/facebook.svg" alt="logo"></div>
+                      <div class="jobsCard__header__wrapper">
+                        <p class="jobsCard__header__title">Facebook</p>
+                        <p class="jobsCard__header__date">March 30, 2021</p>
+                      </div>
+                    </div>
+                    <div class="jobsCard__content">
+                      <p class="jobsCard__content__text">Lead Technical Architect</p>
+                      <div class="jobsCard__tags__wrapper">
+                              <div class="tag tag__blue">Technology</div>
+                              <div class="tag tag__orange">Full Time</div>
+                      </div>
+                    </div>
+                    <div class="jobsCard__footer">
+                      <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt="">
+                        <p class="jobsCard__city">Melbourne</p>
+                      </div>
+                      <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt="">
+                        <p class="jobsCard__salary">210k-240k</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="jobsCard swiper-slide" style="width: 360px">
+                    <div class="jobsCard__header">
+                      <div class="jobsCard__header__logo"><img src="img/spotify.svg" alt="logo"></div>
+                      <div class="jobsCard__header__wrapper">
+                        <p class="jobsCard__header__title">Spotify</p>
+                        <p class="jobsCard__header__date">March 30, 2021</p>
+                      </div>
+                    </div>
+                    <div class="jobsCard__content">
+                      <p class="jobsCard__content__text">Digital Media Strategist</p>
+                      <div class="jobsCard__tags__wrapper">
+                              <div class="tag tag__blue">Business</div>
+                              <div class="tag tag__orange">Casul</div>
+                      </div>
+                    </div>
+                    <div class="jobsCard__footer">
+                      <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt="">
+                        <p class="jobsCard__city">New York</p>
+                      </div>
+                      <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt="">
+                        <p class="jobsCard__salary">50k-70k</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="jobsCard swiper-slide" style="width: 360px">
+                    <div class="jobsCard__header">
+                      <div class="jobsCard__header__logo"><img src="img/paypal.svg" alt="logo"></div>
+                      <div class="jobsCard__header__wrapper">
+                        <p class="jobsCard__header__title">Paypal</p>
+                        <p class="jobsCard__header__date">March 30, 2021</p>
+                      </div>
+                    </div>
+                    <div class="jobsCard__content">
+                      <p class="jobsCard__content__text">Systems Administrator</p>
+                      <div class="jobsCard__tags__wrapper">
+                              <div class="tag tag__blue">Technology</div>
+                              <div class="tag tag__orange">Full Time</div>
+                      </div>
+                    </div>
+                    <div class="jobsCard__footer">
+                      <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt="">
+                        <p class="jobsCard__city">California</p>
+                      </div>
+                      <div class="jobsCard__footer__wrapper"><img src="img//location.svg" alt="">
+                        <p class="jobsCard__salary">40k-50k</p>
+                      </div>
+                    </div>
+                  </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="explore">
-      <div class="container explore__container">
-        <div class="explore__icon__wrapper"><img src="img/glass.png" alt="glass"/></div>
-        <p class="explore__title">Explore a job now!</p>
-        <p class="explore__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rhoncus pharetra cursus. Suspendisse sodales porta leo, ac placerat ex pretium quis.        </p>
-            <form class="form explore__form" action="">
-              <input class="form__input" placeholder="Search..."/>
-                  <button class="btn form__btn" type="button">Search</button>
-            </form>
-      </div>
-    </section>
+      </section>
+      <section class="companies" data-section="company">
+        <div class="container companies__container">
+          <div class="companies__header">
+            <div class="companies__text__wrapper">
+              <p class="companies__title">Work with exciting companies</p>
+              <p class="companies__text">Discover more than 1,600 open positions</p>
+            </div>
+            <div class="companies__btn__wrapper"> 
+                    <div class="button__wrapper ">
+                      <button class="sliderBtnPrev companies__slider__button-prev" type="button"></button>
+                      <button class="sliderBtnNext companies__slider__button-next" type="button"></button>
+                    </div>
+            </div>
+          </div>
+          <div class="companies__slider">
+            <div class="swiper-wrapper">
+                    <div class="companiesCard swiper-slide" style="max-width: 390px; width: 100%;">
+                      <div class="companiesCard__container">
+                        <div class="companiesCard__header">
+                          <div class="companiesCard__header__logo"><img src="img/dribble.svg" alt="logo"></div>
+                          <p class="companiesCard__header__title">Dribble</p>
+                        </div>
+                        <p class="companiesCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
+                              <div class="tag tag__green">65 Employers</div>
+                      </div>
+                    </div>
+                    <div class="companiesCard swiper-slide" style="max-width: 390px; width: 100%;">
+                      <div class="companiesCard__container">
+                        <div class="companiesCard__header">
+                          <div class="companiesCard__header__logo"><img src="img/paypal.svg" alt="logo"></div>
+                          <p class="companiesCard__header__title">Paypal</p>
+                        </div>
+                        <p class="companiesCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
+                              <div class="tag tag__green">6000 Employers</div>
+                      </div>
+                    </div>
+                    <div class="companiesCard swiper-slide" style="max-width: 390px; width: 100%;">
+                      <div class="companiesCard__container">
+                        <div class="companiesCard__header">
+                          <div class="companiesCard__header__logo"><img src="img/spotify.svg" alt="logo"></div>
+                          <p class="companiesCard__header__title">Spotify</p>
+                        </div>
+                        <p class="companiesCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
+                              <div class="tag tag__green">2000 Employers</div>
+                      </div>
+                    </div>
+                    <div class="companiesCard swiper-slide" style="max-width: 390px; width: 100%;">
+                      <div class="companiesCard__container">
+                        <div class="companiesCard__header">
+                          <div class="companiesCard__header__logo"><img src="img/slack.svg" alt="logo"></div>
+                          <p class="companiesCard__header__title">Slack</p>
+                        </div>
+                        <p class="companiesCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
+                              <div class="tag tag__green">400 Employers</div>
+                      </div>
+                    </div>
+                    <div class="companiesCard swiper-slide" style="max-width: 390px; width: 100%;">
+                      <div class="companiesCard__container">
+                        <div class="companiesCard__header">
+                          <div class="companiesCard__header__logo"><img src="img/facebook.svg" alt="logo"></div>
+                          <p class="companiesCard__header__title">Facebook</p>
+                        </div>
+                        <p class="companiesCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at dui mollis metus gravida tristique.</p>
+                              <div class="tag tag__green">6000 Employers</div>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="commercial" data-section="blog">
+        <div class="container commercial__container">
+          <div class="commercial__images"><img class="commercial__img" src="img/man.png" alt=""><img src="img/note.png" alt=""></div>
+          <div class="commercial__info">
+            <p class="commercial__mobile__text">WHY CHOOSE US </p>
+            <p class="commercial__info__title">Build a custom membership site with locked content.</p>
+            <p class="commercial__info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna, sit amet pulvinar diam. Sed laoreet feugiat consequat.</p>
+                  <div class="smallCard">
+                    <div class="smallCard__logo"><img src="img/two-users.png" alt="logo"></div>
+                    <div class="smallCard__content">
+                      <div class="smallCard__content__title">Add a feature point here</div>
+                      <div class="smallCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                  </div>
+                  <div class="smallCard">
+                    <div class="smallCard__logo"><img src="img/two-users.png" alt="logo"></div>
+                    <div class="smallCard__content">
+                      <div class="smallCard__content__title">Add a feature point here</div>
+                      <div class="smallCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                  </div>
+                  <div class="smallCard">
+                    <div class="smallCard__logo"><img src="img/two-users.png" alt="logo"></div>
+                    <div class="smallCard__content">
+                      <div class="smallCard__content__title">Add a feature point here</div>
+                      <div class="smallCard__content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__container">
+          <p class="about__mobile__text">TESTIMONIAL</p>
+          <h3 class="about__header">See what users say about our job platform</h3>
+                <div class="button__wrapper about__slider__button__block">
+                  <button class="sliderBtnPrev about__slider__button-prev" type="button"></button>
+                  <button class="sliderBtnNext about__slider__button-next" type="button"></button>
+                </div>
+          <div class="about__slider">
+            <div class="swiper-wrapper">
+                    <div class="aboutCard swiper-slide"> 
+                      <div class="aboutCard__text__wrapper">
+                        <p class="aboutCard__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”</p>
+                        <p class="aboutCard__profession">David Sinclair - Senior Frontend Developer</p>
+                      </div><img class="aboutCard__image" src="img/man.png" alt="person">
+                    </div>
+                    <div class="aboutCard swiper-slide"> 
+                      <div class="aboutCard__text__wrapper">
+                        <p class="aboutCard__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”</p>
+                        <p class="aboutCard__profession">David Sinclair - Senior Frontend Developer</p>
+                      </div><img class="aboutCard__image" src="img/man3.jpeg" alt="person">
+                    </div>
+                    <div class="aboutCard swiper-slide"> 
+                      <div class="aboutCard__text__wrapper">
+                        <p class="aboutCard__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”</p>
+                        <p class="aboutCard__profession">David Sinclair - Senior Frontend Developer</p>
+                      </div><img class="aboutCard__image" src="img/man.png" alt="person">
+                    </div>
+                    <div class="aboutCard swiper-slide"> 
+                      <div class="aboutCard__text__wrapper">
+                        <p class="aboutCard__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mirhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna”</p>
+                        <p class="aboutCard__profession">David Sinclair - Senior Frontend Developer</p>
+                      </div><img class="aboutCard__image" src="img/man3.jpeg" alt="person">
+                    </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news">
+        <div class="container news__container">
+          <div class="news__header">
+            <div class="news__text__wrapper">
+              <p class="news__title">Get the latest news about jobs!</p>
+              <p class="news__text">Discover more than 1,600 open positions</p>
+            </div>
+            <div class="news__btn__wrapper"> 
+                    <div class="button__wrapper ">
+                      <button class="sliderBtnPrev news__slider__button-prev" type="button"></button>
+                      <button class="sliderBtnNext news__slider__button-next" type="button"></button>
+                    </div>
+            </div>
+          </div>
+          <div class="news__slider">
+            <div class="swiper-wrapper">
+                    <div class="newsCard swiper-slide" style="max-width: 390px; width: 100%;"><img class="newsCard__image" src="img/Image-p-500.jpg" alt="image">
+                      <div class="newsCard__container">
+                              <div class="tag tag__blue">Resources</div>
+                        <p class="newsCard__text">Finding employees in the gig economy</p>
+                        <div class="newsCard__date__wrapper"><img src="img/dot.svg" alt="dot">
+                          <p class="newsCard__date">October 24, 2022</p>
+                        </div>
+                              <button class="btn secondary newsCard__btn" type="button">Read More<svg class= 'newsCard__btn__img' xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
+                              </button>
+                      </div>
+                    </div>
+                    <div class="newsCard swiper-slide" style="max-width: 390px; width: 100%;"><img class="newsCard__image" src="img/2003-p-500.jpg" alt="image">
+                      <div class="newsCard__container">
+                              <div class="tag tag__blue">Education</div>
+                        <p class="newsCard__text">How to make a great first impression everytime</p>
+                        <div class="newsCard__date__wrapper"><img src="img/dot.svg" alt="dot">
+                          <p class="newsCard__date">October 24, 2022</p>
+                        </div>
+                              <button class="btn secondary newsCard__btn" type="button">Read More<svg class= 'newsCard__btn__img' xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
+                              </button>
+                      </div>
+                    </div>
+                    <div class="newsCard swiper-slide" style="max-width: 390px; width: 100%;"><img class="newsCard__image" src="img/Blog2002-p-500.jpg" alt="image">
+                      <div class="newsCard__container">
+                              <div class="tag tag__blue">Trends</div>
+                        <p class="newsCard__text">Find out the best paying careers in 2022</p>
+                        <div class="newsCard__date__wrapper"><img src="img/dot.svg" alt="dot">
+                          <p class="newsCard__date">October 24, 2022</p>
+                        </div>
+                              <button class="btn secondary newsCard__btn" type="button">Read More<svg class= 'newsCard__btn__img' xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
+                              </button>
+                      </div>
+                    </div>
+                    <div class="newsCard swiper-slide" style="max-width: 390px; width: 100%;"><img class="newsCard__image" src="img/Blog2520p.jpeg" alt="image">
+                      <div class="newsCard__container">
+                              <div class="tag tag__blue">Careers</div>
+                        <p class="newsCard__text">Ten things to nail your next job Interview</p>
+                        <div class="newsCard__date__wrapper"><img src="img/dot.svg" alt="dot">
+                          <p class="newsCard__date">March 24, 2021</p>
+                        </div>
+                              <button class="btn secondary newsCard__btn" type="button">Read More<svg class= 'newsCard__btn__img' xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 256 256"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path></svg>
+                              </button>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="explore" data-section="blog">
+        <div class="container explore__container">
+          <div class="explore__icon__wrapper"><img src="img/glass.png" alt="glass"></div>
+          <p class="explore__title">Explore a job now!</p>
+          <p class="explore__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris rhoncus pharetra cursus. Suspendisse sodales porta leo, ac placerat ex pretium quis.        </p>
+                <form class="form explore__form" action="">
+                  <input class="form__input" placeholder="Search..." type="search">
+                        <button class="btn primary form__btn" type="button">Search
+                        </button>
+                </form>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
-      <div class="container footer__container"><img class="footer__logo" src="img/logo.svg"/>
+      <div class="container footer__container"><img class="footer__logo" src="img/logo.svg">
         <div class="footer__grid">
           <div class="footer__nav__wrapper">
-            <div class="footer__nav__title">PAGES</div><a class="link link_left" href="/">Home</a><a class="link link_left" href="/">Company</a><a class="link link_left" href="/">Blog</a>
+            <div class="footer__nav__title">PAGES</div>
+                <nav class="nav footer__navigation"><a class="link link__home footer__navigation__link" data-nav="home">Home</a><a class="link link__company footer__navigation__link" data-nav="company">Company</a><a class="link link__blog footer__navigation__link" data-nav="blog">Blog</a>
+                </nav>
           </div>
           <div class="footer__form__wrapper">
             <div class="footer__form__title">SIGN UP OUR NEWSLETTER</div>
-                <form class="form form-split undefined" action="">
-                  <input class="form__input form__input-split" placeholder="Email address"/>
-                      <button class="btn form__btn-split" type="button">Get started</button>
+                <form class="form form-split footer__form" action="">
+                  <input class="form__input form__input-split" placeholder="Email address" type="email">
+                      <button class="btn primary form__btn-split" type="button">Get started
+                      </button>
                 </form>
           </div>
         </div>

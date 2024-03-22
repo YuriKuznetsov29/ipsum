@@ -1,17 +1,19 @@
 .banner {
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 64px 0;
 }
 
 .banner__content__container {
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
 .banner__title {
-    width: 298px;
+    width: 310px;
     height: 40px;
     display: flex;
     justify-content: space-between;
@@ -58,10 +60,11 @@
 
 .banner__content__text-right {
     color: var(--colors-bright-gray);
-    text-align: left;
 }
 
 .banner__image {
+    max-width: 100%;
+    object-fit: cover;
     margin-bottom: 80px;
 }
 
@@ -75,5 +78,49 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
+.banner__brand__img {
+    fill: #6d7d93;
+    &:hover {
+        fill: #443fde;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner__content__wrapper {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 35px;
+    }
+
+    .banner__title {
+        margin-bottom: 24px;
+    }
+
+    .banner__content__text-left {
+        margin-bottom: 16px;
+    }
+
+    .banner__form {
+        position: static;
+    }
+
+    .banner__image {
+        margin-bottom: 32px;
+    }
+
+    .banner__brands {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .banner__title {
+        margin-bottom: 24px;
+    }
+}

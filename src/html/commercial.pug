@@ -1,11 +1,12 @@
 include /html/smallCard
 
-section.commercial
+section(class= 'commercial', data-section= 'blog')
     .container.commercial__container
         .commercial__images
-            img(src="@img/man.png", alt="")
+            img(class= 'commercial__img',src="@img/man.png", alt="")
             img(src="@img/note.png", alt="")
         .commercial__info
+            p.commercial__mobile__text WHY CHOOSE US 
             p.commercial__info__title Build a custom membership site with locked content.
             p.commercial__info__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a mi rhoncus, pharetra leo et, efficitur tortor. Fusce vel convallis magna, sit amet pulvinar diam. Sed laoreet feugiat consequat.
             +smallCard

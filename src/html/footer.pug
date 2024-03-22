@@ -7,10 +7,7 @@ footer.footer
         .footer__grid
             .footer__nav__wrapper
                 .footer__nav__title PAGES
-                +link('/', 'Home', "link_left")
-                +link('/', 'Company', "link_left")
-                +link('/', 'Blog', "link_left")
+                +navigation('footer__navigation', 'footer__navigation__link')
             .footer__form__wrapper
                 .footer__form__title SIGN UP OUR NEWSLETTER
-                +form("Email address", "Get started", true)
-
+                +form("Email address", "Get started", true, "footer__form", "email")

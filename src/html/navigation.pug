@@ -1,7 +1,8 @@
 include /html/link
 
-mixin navigation(column, start)
-    nav(class=`nav ${column} ${start}`)
-        +link('/', 'Home', 'link-active')
-        +link('/', 'Company')
-        +link('/', 'Blog')
+mixin navigation(style, linkStyle= '')
+    nav(class=`nav ${style}`)
+        +link('Home', `link__home ${linkStyle}`, 'home')
+        +link('Company', `link__company ${linkStyle}`, 'company')
+        +link('Blog', `link__blog ${linkStyle}`, 'blog')
+        block

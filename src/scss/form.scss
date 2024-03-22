@@ -1,6 +1,6 @@
 .form {
-    width: 720px;
-    height: 70px;
+    max-width: 720px;
+    width: 100%;
     padding: 13px;
     border: 1px solid #ebebef;
     display: flex;
@@ -41,7 +41,6 @@
         background: none;
         border: 1px solid #ebebef;
     }
-
 }
 
 .form__btn {
@@ -58,4 +57,27 @@
 .form__icon {
     width: 24px;
     height: 24px;
+}
+
+@media (max-width: 767px) {
+    .form {
+        max-width: 100%;
+        flex-direction: column;
+        margin-bottom: 32px;
+    }
+
+    .form__btn,
+    .form__btn-split {
+        width: 100%;
+        margin: 0;
+    }
+    .form-split {
+        height: auto;
+    }
+
+    .form__input__wrapper-split,
+    .form__input-split {
+        margin-bottom: 12px;
+        width: 100%;
+    }
 }

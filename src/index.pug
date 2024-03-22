@@ -1,16 +1,19 @@
-html
+doctype html
+html(lang="en")
     head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title IPSUM
         link(rel="stylesheet" href='css/style.min.css')
     body
         include html/header
-        include html/banner
-        include html/jobs
-        include html/companies
-        include html/commercial 
-        include html/about
-        include html/news
-        include html/explore 
+        main 
+            include html/banner
+            include html/jobs
+            include html/companies
+            include html/commercial 
+            include html/about
+            include html/news
+            include html/explore 
         include html/footer
         script(src="js/app.min.js")
-
-    

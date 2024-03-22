@@ -3,15 +3,15 @@ include /html/button
 
 -
     const cardData = [
-        {header: {logo: 'facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, text: 'Lead Technical Architect', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Melbourne', salary: '210k-240k'},
-        {header: {logo: 'facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, text: 'Lead Technical Architect', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Melbourne', salary: '210k-240k'},
-        {header: {logo: 'facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, text: 'Lead Technical Architect', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Melbourne', salary: '210k-240k'},
-        {header: {logo: 'facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, text: 'Lead Technical Architect', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Melbourne', salary: '210k-240k'},
-        {header: {logo: 'facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, text: 'Lead Technical Architect', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Melbourne', salary: '210k-240k'},
-        {header: {logo: 'facebook.svg', title: 'Facebook', date: 'October 25, 2022'}, text: 'Lead Technical Architect', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Melbourne', salary: '210k-240k'},
+        {header: {logo: 'dribble.svg', title: 'Dribble', date: 'October 25, 2022'}, text: 'Front End Developer', tags: [{text: 'Marketing', color: 'blue'}, {text: 'Part Time', color: 'orange'}], city: 'San Antonio', salary: '130k-160k'},
+        {header: {logo: 'dribble.svg', title: 'Dribble', date: 'October 25, 2022'}, text: 'Backend Developer', tags: [{text: 'Design', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Dallas', salary: '50k-70k'},
+        {header: {logo: 'tokopedia.svg', title: 'Tokopedia', date: 'March 30, 2021'}, text: 'Scrum Master', tags: [{text: 'Marketing', color: 'blue'}, {text: 'Part Time', color: 'orange'}], city: 'San Antonio', salary: '130k-160k'},
+        {header: {logo: 'facebook.svg', title: 'Facebook', date: 'March 30, 2021'}, text: 'Lead Technical Architect', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'Melbourne', salary: '210k-240k'},
+        {header: {logo: 'spotify.svg', title: 'Spotify', date: 'March 30, 2021'}, text: 'Digital Media Strategist', tags: [{text: 'Business', color: 'blue'}, {text: 'Casul', color: 'orange'}], city: 'New York', salary: '50k-70k'},
+        {header: {logo: 'paypal.svg', title: 'Paypal', date: 'March 30, 2021'}, text: 'Systems Administrator', tags: [{text: 'Technology', color: 'blue'}, {text: 'Full Time', color: 'orange'}], city: 'California', salary: '40k-50k'},
     ]
 
-section.jobs 
+section(class= 'jobs', data-section= 'company')
     .container.container__jobs
         .jobs__header
             .jobs__text__wrapper

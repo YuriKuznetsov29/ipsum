@@ -25,6 +25,7 @@ export const scss = () => {
             .pipe(
                 sass({
                     outputStyle: "expanded",
+                    includePaths: ["node_modules"],
                 })
             )
             .pipe(app.plugins.if(app.isProd, groupCssMediaQueries()))

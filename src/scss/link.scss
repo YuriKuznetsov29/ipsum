@@ -1,0 +1,19 @@
+.link {
+    padding: 0 16px;
+    height: 44px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-s);
+    color: var(--colors-ebony);
+    &:hover {
+        cursor: pointer;
+        color: var(--btn-primary-color);
+    }
+    &:active {
+        color: var(--colors-royal-blue);
+    }
+    &.link-active {
+        color: var(--colors-royal-blue);
+    }
+}

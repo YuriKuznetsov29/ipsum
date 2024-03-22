@@ -1,10 +1,15 @@
 @import "./fonts.scss";
 @import "./reset.scss";
-// @import "~normalize.css";
+@import "normalize.css/normalize";
 @import "../../node_modules/swiper/swiper.scss";
 @import "../../node_modules/swiper/modules/autoplay.scss";
 @import "./variables.scss";
-@import "./btn.scss";
+@import "./tag.scss";
+@import "./sliderBtn.scss";
+@import "./button.scss";
+@import "./link.scss";
+@import "./navigation.scss";
+@import "./form.scss";
 @import "./header.scss";
 @import "./banner.scss";
 @import "./companies.scss";
@@ -19,10 +24,6 @@
 @import "./news.scss";
 @import "./newsCard.scss";
 @import "./footer.scss";
-@import "./form.scss";
-@import "./tag.scss";
-@import "./sliderBtn.scss";
-@import "./navigation.scss";
 
 body {
     background-color: #fff;
@@ -31,10 +32,28 @@ body {
     font-size: var(--font-size-m);
 }
 
-.section {
+section {
+    padding: 64px 0;
     width: 100%;
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
+    width: 100%;
+}
+
+.scroll__fixed {
+    overflow: hidden;
+}
+
+@media (max-width: 1140px) {
+    .container {
+        padding: 0 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        padding: 32px 0;
+    }
 }

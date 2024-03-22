@@ -1,7 +1,8 @@
 include /html/tag
+include /html/button
 
 mixin newsCard(image, text, tag, date)
-    .newsCard.swiper-slide(style= "width: 390px")
+    .newsCard.swiper-slide(style= "max-width: 390px; width: 100%;")
         img(class= 'newsCard__image', src= `@img/${image}`, alt= 'image')
         .newsCard__container
             +tag(tag.text, tag.color)
@@ -9,6 +10,5 @@ mixin newsCard(image, text, tag, date)
             .newsCard__date__wrapper
                 img(src='@img/dot.svg', alt='dot')
                 p.newsCard__date= date
-            button.newsCard__btn
-                |Read More
-                img(class= 'newsCard__btn__img', src='@img/smallArrow.svg', alt='arrow')
+            +button("Read More", "secondary newsCard__btn")
+                include /img/smallArrow.svg

@@ -1,8 +1,18 @@
 include /html/button
 include /html/navigation
+include /html/link
 
 header.header 
-    .container.header__container
-        img(src="@img/logo.svg")
-        +navigation 
-        +button('Log in')
+    .header__wrapper
+        .container.header__container
+            img(src="@img/logo.svg")
+            +navigation('header__desc__navigation')
+            .header__login__wrapper
+                a.header__login__text Post a Job
+                +button('Log in')
+            include /img/burger.svg
+            .header__mobile
+                include /img/close.svg
+                +navigation('header__mobile__navigation', 'header__link')
+                    +link('Post a Job', 'header__link')
+                    +link('Log in', 'header__link')

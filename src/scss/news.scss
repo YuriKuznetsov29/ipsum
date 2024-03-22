@@ -1,6 +1,5 @@
 .news {
     width: 100%;
-    padding: 64px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,6 +8,7 @@
 }
 
 .news__header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -40,3 +40,24 @@
     }
 }
 
+@media (max-width: 767px) {
+    .news__header {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .news__text__wrapper {
+        max-width: 100%;
+    }
+
+    .news__text {
+        display: none;
+    }
+
+    .news__btn__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+}

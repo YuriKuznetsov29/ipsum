@@ -3,16 +3,16 @@
     font-size: var(--font-size-s);
     margin-right: 15px;
     &__blue {
-        background: rgb(243, 243, 252);
-        color: rgb(68, 63, 222);
+        background: var(--colors-link-water);
+        color: var(--colors-royal-blue);
     }
     &__orange {
-        background: rgb(254, 247, 241); 
-        color: rgb(201, 139, 64);
+        background: var(--colors-seashell-peach);
+        color: var(--colors-tussock);
     }
     &__green {
         padding: 10px 15px;
-        background: rgb(241, 248, 244);
-        color: rgb(36, 107, 73);
+        background: var(--colors-harp);
+        color: var(--colors-green-pea);
     }
 }

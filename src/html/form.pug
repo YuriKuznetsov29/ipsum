@@ -1,11 +1,11 @@
 include /html/button
 
-mixin form(placeholder, text, split, style)
+mixin form(placeholder, text, split, style, type= "search")
     if (split)
         form(class= `form form-split ${style}`,action="")
-            input(class= "form__input form__input-split", placeholder= placeholder)
-            +button(text, "form__btn-split")
+            input(class= "form__input form__input-split", placeholder= placeholder, type= type)
+            +button(text, "primary form__btn-split")
     else
         form(class= `form ${style}`, action="")
-            input(class= "form__input", placeholder= placeholder)
-            +button(text, "form__btn")
+            input(class= "form__input", placeholder= placeholder, type= type)
+            +button(text, "primary form__btn")
